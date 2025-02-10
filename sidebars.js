@@ -37,6 +37,11 @@ const sidebars = {
           label: "Introduction to Ronin",
           id: "basics/introduction",
         },
+        {
+          type: 'link',
+          label: 'Whitepaper',
+          href: '/basics/white-paper',
+        },
         // Acquire RON
         "basics/acquire-ron",
         // Tokenomics
@@ -434,6 +439,20 @@ const sidebars = {
         "developers/network",
         {
           type: "category",
+          label: "Quickstart",
+          link: {
+            type: "generated-index",
+            description: "Welcome to the Ronin Quickstart guides! Whether you're a developer looking to integrate with Ronin or just exploring its capabilities, this section provides step-by-step instructions to help you get started quickly.",
+            slug: "/developers/quickstart",
+          },
+          items:[
+            "developers/quickstart/read",
+            "developers/quickstart/write",
+            "developers/quickstart/deploy",
+          ]
+        },
+        {
+          type: "category",
           label: "Node setup",
           link: {
             type: "generated-index",
@@ -489,6 +508,11 @@ const sidebars = {
             "developers/tools/delegation",
             "developers/tools/faucet",
           ]
+        },
+        {
+          type: 'link',
+          label: 'Ronin Developer Console',
+          href: 'https://developers.roninchain.com/console',
         },
         {
           type: 'link',
