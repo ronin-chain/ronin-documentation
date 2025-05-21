@@ -9,7 +9,7 @@ API service providers simplify interaction with the Ronin network by offering AP
 
 [goldrush.dev](https://goldrush.dev/chains/axie-ronin/)
 
-GoldRush provides multichain APIs and toolkits for easy web3 development across 100+ chains.
+GoldRush provides multichain APIs and toolkits for easy web3 development across 100+ chains. 
 
 | | |
 | ----- | ----- |
