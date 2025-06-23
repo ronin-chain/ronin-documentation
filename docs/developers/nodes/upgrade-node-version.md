@@ -35,7 +35,7 @@ To download the latest image for your node, follow these steps:
 1. In the `.env` file, set `NODE_IMAGE` to the following:
 
     ```bash
-    ghcr.io/ronin-chain/ronin:v1.0.2-eaef5a2
+    ghcr.io/ronin-chain/ronin:v1.1.0-0c4fdfb
     ```
 
 2. Save the changes.
@@ -51,7 +51,7 @@ To download the latest image for your node, follow these steps:
 1. In the `.env` file, set `NODE_IMAGE` to the following:
 
     ```bash
-    ghcr.io/ronin-chain/ronin:v1.0.2-eaef5a2
+    ghcr.io/ronin-chain/ronin:v1.1.0-0c4fdfb
     ```
 
 2. Save the changes.
