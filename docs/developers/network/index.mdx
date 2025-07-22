@@ -13,27 +13,75 @@ For SLA-based RPC access, please check out our list of [Node providers](/develop
 
 <table>
 <tbody>
-<tr><td>RPC endpoint</td><td style={{width: "430px"}}>`https://api.roninchain.com/rpc`</td></tr>
 <tr><td>Chain ID</td><td>2020</td></tr>
+<tr><td>RPC endpoint</td><td style={{width: "430px"}}>`https://api.roninchain.com/rpc`</td></tr>
 <tr><td>Currency Symbol</td><td>RON</td></tr>
 <tr><td>Block Explorer</td><td>`https://app.roninchain.com/`</td></tr>
+<tr><td>Network status</td><td>[ronin-stats.roninchain.com](https://ronin-stats.roninchain.com/)</td></tr>
 <tr><td>Block time</td><td>~3s</td></tr>
-<tr><td>Ronin node image</td><td>`ghcr.io/ronin-chain/ronin:v1.0.2-eaef5a2`</td></tr>
+<tr><td>Block finality</td><td>[2 blocks](https://roninchain.com/blog/posts/introducing-fast-finality-on-ronin) (~6 seconds)</td></tr>
+<tr><td>Ronin node image</td><td>`ghcr.io/ronin-chain/ronin:v1.1.0-0c4fdfb`</td></tr>
+<tr><td>Consensus</td><td> DPoS (Consortium)</td></tr>
+<tr><td>Genesis file</td><td>[mainnet.json](https://github.com/axieinfinity/ronin/blob/master/genesis/mainnet.json)</td></tr>
 </tbody>
 </table>
+
+### Validator set
+
+* Total validators: 22
+* Governing Validators: 12
+* Standard Validators: 10 (Randomly selected every epoch from the Validator Candidates)
+
+For a list of all validators visit: [RON Staking](https://app.roninchain.com/staking?tab=validator).
+
+### Genesis contracts
+
+```bash
+Whitelist: 0x0000000000000000000000000000000000000033
+Denylist: 0x313b24994c93FA0471CB4D7aB796b07467041806
+Validators: 0x0000000000000000000000000000000000000011
+```
+
 
 ## Saigon testnet
 
 <table style={{margin:"0 0 50px 0"}}>
 <tbody>
-<tr><td>RPC endpoint</td><td style={{width: "430px"}}>`https://saigon-testnet.roninchain.com/rpc`</td></tr>
 <tr><td>Chain ID</td><td>2021</td></tr>
+<tr><td>RPC endpoint</td><td style={{width: "430px"}}>`https://saigon-testnet.roninchain.com/rpc`</td></tr>
 <tr><td>Currency Symbol</td><td>RON</td></tr>
 <tr><td>Block Explorer</td><td>`https://saigon-app.roninchain.com/`</td></tr>
+<tr><td>Network status</td><td>[ronin-stats.roninchain.com](https://ronin-stats.roninchain.com/?network=2021)</td></tr>
 <tr><td>Block time</td><td>~3s</td></tr>
-<tr><td>Ronin node image</td><td>`ghcr.io/ronin-chain/ronin:v1.0.2-eaef5a2`</td></tr>
+<tr><td>Ronin node image</td><td>`ghcr.io/ronin-chain/ronin:v1.1.0-0c4fdfb`</td></tr>
+<tr><td>Consensus</td><td> DPoS (Consortium)</td></tr>
+<tr><td>Genesis file</td><td>[testnet.json](https://github.com/axieinfinity/ronin/blob/master/genesis/testnet.json)</td></tr>
 </tbody>
 </table>
+
+### Validator set
+
+* Total validators: 21
+* Governing Validators: 11
+* Standard Validators: 10
+
+For today's validator set, see [RON Staking](https://saigon-app.roninchain.com/staking?tab=validator).
+
+
+### Contracts
+
+```bash
+RoninGovernanceAdmin: 0x8a320aFb578BEed1A5BB08823CF9A5f60Ea694f4
+RoninTrustedOrganizationProxy: 0x7f46c5DD5f13FF0dd973317411d70800db248e7d
+MaintenanceProxy: 0x4016C80D97DDCbe4286140446759a3f0c1d20584
+StakingVestingProxy: 0x023930A8ad88dc5AB3a3b8E8cb849BbD6a5c8441
+SlashIndicatorProxy: 0xF7837778b6E180Df6696C8Fa986d62f8b6186752
+StakingProxy: 0x9C245671791834daf3885533D24dce516B763B28
+RoninValidatorSetProxy: 0x54B3AC74a90E64E8dDE60671b6fE8F8DDf18eC9d
+BridgeTrackingProxy: 0x61626ba084aDdc5dBFCdFfA257e66F8618d3feAB
+GatewayV2 Proxy: 0xCee681C9108c42C710c6A8A949307D5F13C9F3ca
+```
+
 
 ## Other public RPC endpoints
 
