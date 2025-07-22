@@ -38,9 +38,9 @@ const sidebars = {
           id: "basics/introduction",
         },
         {
-          type: 'link',
-          label: 'Whitepaper',
-          href: '/basics/white-paper',
+          type: "link",
+          label: "Whitepaper",
+          href: "/basics/white-paper",
         },
         // Acquire RON
         "basics/acquire-ron",
@@ -53,7 +53,8 @@ const sidebars = {
           label: "dApps",
           link: {
             type: "generated-index",
-            description: "User guides for selected dApps in the Ronin ecosystem.",
+            description:
+              "User guides for selected dApps in the Ronin ecosystem.",
             slug: "/apps",
           },
           items: [
@@ -76,7 +77,8 @@ const sidebars = {
                   label: "Liquidity pools",
                   link: {
                     type: "generated-index",
-                    description: "Guides for creating and managing liquidity pools.",
+                    description:
+                      "Guides for creating and managing liquidity pools.",
                     slug: "apps/katana/pools",
                   },
                   items: [
@@ -92,7 +94,8 @@ const sidebars = {
                   label: "Farms",
                   link: {
                     type: "generated-index",
-                    description: "Guides for creating farms and staking LP tokens.",
+                    description:
+                      "Guides for creating farms and staking LP tokens.",
                     slug: "apps/katana/farms",
                   },
                   items: [
@@ -163,7 +166,8 @@ const sidebars = {
                   label: "Register an RNS name",
                   link: {
                     type: "generated-index",
-                    description: "Guides to register different categories of RNS names.",
+                    description:
+                      "Guides to register different categories of RNS names.",
                     slug: "apps/rns/register",
                   },
                   items: [
@@ -231,75 +235,64 @@ const sidebars = {
             id: "protocol/validators/index",
           },
           items: [
+            "protocol/validators/setup",
+            "protocol/validators/become-validator",
             {
               type: "category",
-              label: "Setup",
+              label: "Manage validator account",
               link: {
-                type: "doc",
-                id: "developers/nodes/setup",
+                type: "generated-index",
+                title: "Manage your validator account",
+                description:
+                  "Guides for increasing or withdrawing your stake, claiming rewards, and managing your validator account.",
+                slug: "/protocol/validators/manage",
               },
               items: [
-                // Become a validator
-                "protocol/validators/become-validator",
-                // Manage your account
-                {
-                  type: "category",
-                  label: "Manage validator account",
-                  link: {
-                    type: "generated-index",
-                    title: "Manage your validator account",
-                    description:
-                      "Guides for increasing or withdrawing your stake, claiming rewards, and managing your validator account.",
-                    slug: "/protocol/validators/manage",
-                  },
-                  items: [
-                    // View activity
-                    "protocol/validators/manage/view-activity",
-                    // View analytics
-                    "protocol/validators/manage/view-analytics",
-                    // View profile details
-                    "protocol/validators/manage/view-profile",
-                    // Claim rewards
-                    "protocol/validators/manage/claim-rewards",
-                    // Increase or move stake
-                    "protocol/validators/manage/stake",
-                    // Add or change finality vote key
-                    "protocol/validators/manage/finality",
-                    // Add or change VRF key
-                    "protocol/validators/manage/vrf-key",
-                    // Change commission rate
-                    "protocol/validators/manage/commission",
-                    // Change admin address
-                    "protocol/validators/manage/addresses",
-                    // Schedule maintenance
-                    "protocol/validators/manage/maintenance",
-                    // Early exit maintenance
-                    "protocol/validators/manage/maintenance-exit",
-                    // Renounce validator role
-                    "protocol/validators/manage/renounce",
-                    // Request emergency exit
-                    "protocol/validators/manage/emergency-exit",
-                  ],
-                },
-                // Slashing
-                "protocol/validators/slashing",
-                // Governance
-                {
-                  type: "category",
-                  label: "Governance",
-                  link: {
-                    type: "doc",
-                    id: "protocol/validators/governance/overview",
-                  },
-                  items: [
-                    // Create and vote on proposals
-                    "protocol/validators/governance/proposals",
-                  ],
-                },
-                // FAQ
-                "protocol/validators/faq",
+                // View activity
+                "protocol/validators/manage/view-activity",
+                // View analytics
+                "protocol/validators/manage/view-analytics",
+                // View profile details
+                "protocol/validators/manage/view-profile",
+                // Claim rewards
+                "protocol/validators/manage/claim-rewards",
+                // Increase or move stake
+                "protocol/validators/manage/stake",
+                // Add or change finality vote key
+                "protocol/validators/manage/finality",
+                // Add or change VRF key
+                "protocol/validators/manage/vrf-key",
+                // Change commission rate
+                "protocol/validators/manage/commission",
+                // Change admin address
+                "protocol/validators/manage/addresses",
+                // Schedule maintenance
+                "protocol/validators/manage/maintenance",
+                // Early exit maintenance
+                "protocol/validators/manage/maintenance-exit",
+                // Renounce validator role
+                "protocol/validators/manage/renounce",
+                // Request emergency exit
+                "protocol/validators/manage/emergency-exit",
               ],
             },
+            // Slashing
+            "protocol/validators/slashing",
+            // Governance
+            {
+              type: "category",
+              label: "Governance",
+              link: {
+                type: "doc",
+                id: "protocol/validators/governance/overview",
+              },
+              items: [
+                // Create and vote on proposals
+                "protocol/validators/governance/proposals",
+              ],
+            },
+            // FAQ
+            "protocol/validators/faq",
           ],
         },
         // Delegators
@@ -336,31 +329,30 @@ const sidebars = {
           type: "category",
           label: "Network",
           link: { type: "doc", id: "developers/network/index" },
-          items:[
+          items: [
             {
               type: "category",
               label: "EIP-1559",
               link: { type: "doc", id: "developers/network/eip-1559/index" },
-              items:[
-                "developers/network/eip-1559/gas-suggestion"
-              ]
-            }
-          ]
+              items: ["developers/network/eip-1559/gas-suggestion"],
+            },
+          ],
         },
         {
           type: "category",
           label: "Quickstart",
           link: {
             type: "generated-index",
-            description: "Welcome to the Ronin Quickstart guides! Whether you're a developer looking to integrate with Ronin or just exploring its capabilities, this section provides step-by-step instructions to help you get started quickly.",
+            description:
+              "Welcome to the Ronin Quickstart guides! Whether you're a developer looking to integrate with Ronin or just exploring its capabilities, this section provides step-by-step instructions to help you get started quickly.",
             slug: "/developers/quickstart",
           },
-          items:[
+          items: [
             "developers/quickstart/read",
             "developers/quickstart/write",
             "developers/quickstart/deploy",
             "developers/quickstart/list-collection",
-          ]
+          ],
         },
         "developers/gold-standard",
         {
@@ -368,54 +360,44 @@ const sidebars = {
           label: "Node setup",
           link: {
             type: "generated-index",
-            description: "A Ronin node is the building block of the Ronin network infrastructure. Nodes connect together to conduct consensus on transactions, maintain the ledger, and provide other useful functions.",
+            description:
+              "A Ronin node is the building block of the Ronin network infrastructure. Nodes connect together to conduct consensus on transactions, maintain the ledger, and provide other useful functions.",
             slug: "/developers/nodes",
           },
-          items:[
+          items: [
             "developers/nodes/requirements",
             "developers/nodes/setup",
             "developers/nodes/build-from-source",
             "developers/nodes/upgrade-node-version",
-            // Generate keys
-            "protocol/validators/setup/generate-keys",
-            // Latest version
-            "protocol/validators/setup/upgrade-validator",
-            // Latest version
-            "protocol/validators/setup/random-beacon",
-            // Clean data
-            "protocol/validators/setup/clean-data",
-            // Network parameters
             {
               type: "category",
-              label: "Network parameters",
+              label: "Validators",
               link: {
                 type: "generated-index",
-                title: "Network parameters",
-                slug: "/developers/nodes/parameters",
+                title: "Validators",
+                slug: "/developers/nodes/validators",
               },
               items: [
-                // Ronin mainnet
-                "protocol/validators/setup/parameters/mainnet",
-                // Saigon testnet
-                "protocol/validators/setup/parameters/testnet",
+                "developers/nodes/validators/generate-keys",
+                "developers/nodes/validators/random-beacon",
+                "developers/nodes/validators/clean-data",
+                "developers/nodes/validators/security",
               ],
             },
-            // Security hardening
-            "protocol/validators/setup/security",
-          ]
+          ],
         },
         {
           type: "category",
           label: "Smart Contracts",
           link: {
             type: "doc",
-            id: "developers/smart-contracts/deploy"
+            id: "developers/smart-contracts/deploy",
           },
-          items:[
+          items: [
             "developers/smart-contracts/deploy",
             "developers/smart-contracts/verify",
             "developers/smart-contracts/guidelines",
-          ]
+          ],
         },
         {
           type: "category",
@@ -425,7 +407,7 @@ const sidebars = {
             description: "Discover Ronin tools or services.",
             slug: "/developers/tools",
           },
-          items:[
+          items: [
             "developers/tools/node-providers",
             "developers/tools/api-providers",
             {
@@ -433,7 +415,8 @@ const sidebars = {
               label: "Oracles",
               link: {
                 type: "generated-index",
-                description: "Oracles are critical components in the Ronin ecosystem that enable smart contracts to interact with data from the outside world. They serve as bridges between the blockchain and external data sources, providing trusted and verifiable information that smart contracts can use to execute logic.",
+                description:
+                  "Oracles are critical components in the Ronin ecosystem that enable smart contracts to interact with data from the outside world. They serve as bridges between the blockchain and external data sources, providing trusted and verifiable information that smart contracts can use to execute logic.",
                 slug: "/oracles",
               },
               items: [
@@ -447,18 +430,18 @@ const sidebars = {
             "developers/tools/vrf",
             "developers/tools/delegation",
             "developers/tools/faucet",
-          ]
+          ],
         },
         {
-          type: 'link',
-          label: 'Ronin Developer Console',
-          href: 'https://developers.roninchain.com/console',
+          type: "link",
+          label: "Ronin Developer Console",
+          href: "https://developers.roninchain.com/console",
         },
         {
-          type: 'link',
-          label: 'Mavis docs',
-          href: 'https://docs.skymavis.com/',
-        }
+          type: "link",
+          label: "Mavis docs",
+          href: "https://docs.skymavis.com/",
+        },
       ],
     },
   ],
