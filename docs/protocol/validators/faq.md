@@ -70,4 +70,4 @@ Consider the following:
 Keep public ports only for peering and discovery, otherwise keep it internal. Our `docker-compose` configuration already binds RPC port `8545` to `localhost`.
 
 To implement additional security measures for your node, see
-[Security hardening](./setup/security.md).
+[Security hardening](/developers/nodes/validators/security.md).

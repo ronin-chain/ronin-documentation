@@ -120,15 +120,15 @@ const config = {
         },
         {
           from: '/protocol/validators/setup/parameters',
-          to: '/developers/network',
+          to: '/developers/network/',
         },
         {
           from: '/protocol/validators/setup/parameters/mainnet',
-          to: '/developers/network',
+          to: '/developers/network/',
         },
         {
           from: '/protocol/validators/setup/parameters/testnet',
-          to: '/developers/network',
+          to: '/developers/network/',
         },
         {
           from: '/protocol/validators/setup/security',
