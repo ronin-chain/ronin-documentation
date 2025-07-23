@@ -75,6 +75,14 @@ const config = {
           to: '/developers/nodes/setup',
         },
         {
+          from: '/protocol/validators/setup/mainnet',
+          to: '/developers/nodes/setup',
+        },
+        {
+          from: '/protocol/validators/setup/testnet',
+          to: '/developers/nodes/setup',
+        },
+        {
           from: '/protocol/validators/setup/mainnet/run-validator',
           to: '/developers/nodes/setup',
         },
@@ -93,6 +101,38 @@ const config = {
         {
           from: '/protocol/validators/setup/overview',
           to: '/developers/nodes/setup',
+        },
+        {
+          from: '/protocol/validators/setup/generate-keys',
+          to: '/developers/nodes/validators/generate-keys',
+        },
+        {
+          from: '/protocol/validators/setup/upgrade-validator',
+          to: '/developers/nodes/upgrade-node-version',
+        },
+        {
+          from: '/protocol/validators/setup/random-beacon',
+          to: '/developers/nodes/validators/random-beacon',
+        },
+        {
+          from: '/protocol/validators/setup/clean-data',
+          to: '/developers/nodes/validators/clean-data',
+        },
+        {
+          from: '/protocol/validators/setup/parameters',
+          to: '/developers/network',
+        },
+        {
+          from: '/protocol/validators/setup/parameters/mainnet',
+          to: '/developers/network',
+        },
+        {
+          from: '/protocol/validators/setup/parameters/testnet',
+          to: '/developers/network',
+        },
+        {
+          from: '/protocol/validators/setup/security',
+          to: '/developers/nodes/validators/security',
         },
       ],
       createRedirects(existingPath) {
