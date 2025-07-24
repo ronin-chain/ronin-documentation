@@ -511,7 +511,8 @@ const sidebars = {
               },
               items: [
                 "developers/tools/oracles/pyth",
-                "developers/tools/oracles/chainlink"
+                "developers/tools/oracles/chainlink",
+                "developers/tools/oracles/api3"
               ]
             },
             "developers/tools/ccip",
