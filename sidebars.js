@@ -38,9 +38,9 @@ const sidebars = {
           id: "basics/introduction",
         },
         {
-          type: 'link',
-          label: 'Whitepaper',
-          href: '/basics/white-paper',
+          type: "link",
+          label: "Whitepaper",
+          href: "/basics/white-paper",
         },
         // Acquire RON
         "basics/acquire-ron",
@@ -53,7 +53,8 @@ const sidebars = {
           label: "dApps",
           link: {
             type: "generated-index",
-            description: "User guides for selected dApps in the Ronin ecosystem.",
+            description:
+              "User guides for selected dApps in the Ronin ecosystem.",
             slug: "/apps",
           },
           items: [
@@ -76,7 +77,8 @@ const sidebars = {
                   label: "Liquidity pools",
                   link: {
                     type: "generated-index",
-                    description: "Guides for creating and managing liquidity pools.",
+                    description:
+                      "Guides for creating and managing liquidity pools.",
                     slug: "apps/katana/pools",
                   },
                   items: [
@@ -92,7 +94,8 @@ const sidebars = {
                   label: "Farms",
                   link: {
                     type: "generated-index",
-                    description: "Guides for creating farms and staking LP tokens.",
+                    description:
+                      "Guides for creating farms and staking LP tokens.",
                     slug: "apps/katana/farms",
                   },
                   items: [
@@ -163,7 +166,8 @@ const sidebars = {
                   label: "Register an RNS name",
                   link: {
                     type: "generated-index",
-                    description: "Guides to register different categories of RNS names.",
+                    description:
+                      "Guides to register different categories of RNS names.",
                     slug: "apps/rns/register",
                   },
                   items: [
@@ -231,78 +235,8 @@ const sidebars = {
             id: "protocol/validators/index",
           },
           items: [
-            {
-              type: "category",
-              label: "Setup",
-              link: {
-                type: "doc",
-                id: "protocol/validators/setup/overview",
-              },
-              items: [
-                {
-                  type: "category",
-                  label: "Mainnet",
-                  link: {
-                    type: "generated-index",
-                    slug: "/protocol/validators/setup/mainnet",
-                    description:
-                      "Node installation guides for the Ronin mainnet.",
-                  },
-                  items: [
-                    // Run a validator and bridge together
-                    "protocol/validators/setup/mainnet/run-combined",
-                    // Run a validator
-                    "protocol/validators/setup/mainnet/run-validator",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Saigon testnet",
-                  link: {
-                    type: "generated-index",
-                    title: "Saigon testnet",
-                    description:
-                      "Node installation guides for the Saigon testnet.",
-                    slug: "/protocol/validators/setup/testnet",
-                  },
-                  items: [
-                    // Run a validator and bridge together
-                    "protocol/validators/setup/testnet/run-combined",
-                  ],
-                },
-                // Generate keys
-                "protocol/validators/setup/generate-keys",
-                // Install Ronin CLI
-                "protocol/validators/setup/cli",
-                // Latest version
-                "protocol/validators/setup/upgrade-validator",
-                // Latest version
-                "protocol/validators/setup/random-beacon",
-                // Clean data
-                "protocol/validators/setup/clean-data",
-                // Network parameters
-                {
-                  type: "category",
-                  label: "Network parameters",
-                  link: {
-                    type: "generated-index",
-                    title: "Network parameters",
-                    slug: "/protocol/validators/setup/parameters",
-                  },
-                  items: [
-                    // Ronin mainnet
-                    "protocol/validators/setup/parameters/mainnet",
-                    // Saigon testnet
-                    "protocol/validators/setup/parameters/testnet",
-                  ],
-                },
-                // Security hardening
-                "protocol/validators/setup/security",
-              ],
-            },
-            // Become a validator
+            "protocol/validators/setup",
             "protocol/validators/become-validator",
-            // Manage your account
             {
               type: "category",
               label: "Manage validator account",
@@ -382,45 +316,6 @@ const sidebars = {
             "protocol/delegators/faq",
           ],
         },
-
-        //Bridge Operators
-        {
-          type: "category",
-          label: "Bridge operators",
-          link: {
-            type: "doc",
-            id: "protocol/bridge-operators/index",
-          },
-          items: [
-            {
-              type: "category",
-              label: "Setup",
-              link: {
-                type: "doc",
-                id: "protocol/bridge-operators/setup/overview",
-              },
-              items: [
-                "protocol/bridge-operators/setup/run-bridge",
-                "protocol/bridge-operators/setup/upgrade-bridge",
-              ],
-            },
-            // Slashing
-            "protocol/bridge-operators/slashing",
-            // Governance
-            {
-              type: "category",
-              label: "Governance",
-              link: {
-                type: "doc",
-                id: "protocol/bridge-operators/governance/overview",
-              },
-              items: [
-                // Create and vote on proposals
-                "protocol/bridge-operators/governance/proposals",
-              ],
-            },
-          ],
-        },
       ],
     },
     {
@@ -434,31 +329,30 @@ const sidebars = {
           type: "category",
           label: "Network",
           link: { type: "doc", id: "developers/network/index" },
-          items:[
+          items: [
             {
               type: "category",
               label: "EIP-1559",
               link: { type: "doc", id: "developers/network/eip-1559/index" },
-              items:[
-                "developers/network/eip-1559/gas-suggestion"
-              ]
-            }
-          ]
+              items: ["developers/network/eip-1559/gas-suggestion"],
+            },
+          ],
         },
         {
           type: "category",
           label: "Quickstart",
           link: {
             type: "generated-index",
-            description: "Welcome to the Ronin Quickstart guides! Whether you're a developer looking to integrate with Ronin or just exploring its capabilities, this section provides step-by-step instructions to help you get started quickly.",
+            description:
+              "Welcome to the Ronin Quickstart guides! Whether you're a developer looking to integrate with Ronin or just exploring its capabilities, this section provides step-by-step instructions to help you get started quickly.",
             slug: "/developers/quickstart",
           },
-          items:[
+          items: [
             "developers/quickstart/read",
             "developers/quickstart/write",
             "developers/quickstart/deploy",
             "developers/quickstart/list-collection",
-          ]
+          ],
         },
         "developers/gold-standard",
         {
@@ -466,29 +360,44 @@ const sidebars = {
           label: "Node setup",
           link: {
             type: "generated-index",
-            description: "A Ronin node is the building block of the Ronin network infrastructure. Nodes connect together to conduct consensus on transactions, maintain the ledger, and provide other useful functions.",
+            description:
+              "A Ronin node is the building block of the Ronin network infrastructure. Nodes connect together to conduct consensus on transactions, maintain the ledger, and provide other useful functions.",
             slug: "/developers/nodes",
           },
-          items:[
-            "developers/nodes/mainnet",
-            "developers/nodes/mainnet-archive",
-            "developers/nodes/testnet",
-            "developers/nodes/testnet-archive",
+          items: [
+            "developers/nodes/requirements",
+            "developers/nodes/setup",
+            "developers/nodes/build-from-source",
             "developers/nodes/upgrade-node-version",
-          ]
+            {
+              type: "category",
+              label: "Validators",
+              link: {
+                type: "generated-index",
+                title: "Validators",
+                slug: "/developers/nodes/validators",
+              },
+              items: [
+                "developers/nodes/validators/generate-keys",
+                "developers/nodes/validators/random-beacon",
+                "developers/nodes/validators/clean-data",
+                "developers/nodes/validators/security",
+              ],
+            },
+          ],
         },
         {
           type: "category",
           label: "Smart Contracts",
           link: {
             type: "doc",
-            id: "developers/smart-contracts/deploy"
+            id: "developers/smart-contracts/deploy",
           },
-          items:[
+          items: [
             "developers/smart-contracts/deploy",
             "developers/smart-contracts/verify",
             "developers/smart-contracts/guidelines",
-          ]
+          ],
         },
         {
           type: "category",
@@ -498,7 +407,7 @@ const sidebars = {
             description: "Discover Ronin tools or services.",
             slug: "/developers/tools",
           },
-          items:[
+          items: [
             "developers/tools/node-providers",
             "developers/tools/api-providers",
             {
@@ -506,7 +415,8 @@ const sidebars = {
               label: "Oracles",
               link: {
                 type: "generated-index",
-                description: "Oracles are critical components in the Ronin ecosystem that enable smart contracts to interact with data from the outside world. They serve as bridges between the blockchain and external data sources, providing trusted and verifiable information that smart contracts can use to execute logic.",
+                description:
+                  "Oracles are critical components in the Ronin ecosystem that enable smart contracts to interact with data from the outside world. They serve as bridges between the blockchain and external data sources, providing trusted and verifiable information that smart contracts can use to execute logic.",
                 slug: "/oracles",
               },
               items: [
@@ -520,18 +430,18 @@ const sidebars = {
             "developers/tools/vrf",
             "developers/tools/delegation",
             "developers/tools/faucet",
-          ]
+          ],
         },
         {
-          type: 'link',
-          label: 'Ronin Developer Console',
-          href: 'https://developers.roninchain.com/console',
+          type: "link",
+          label: "Ronin Developer Console",
+          href: "https://developers.roninchain.com/console",
         },
         {
-          type: 'link',
-          label: 'Mavis docs',
-          href: 'https://docs.skymavis.com/',
-        }
+          type: "link",
+          label: "Mavis docs",
+          href: "https://docs.skymavis.com/",
+        },
       ],
     },
   ],

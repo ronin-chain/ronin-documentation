@@ -14,7 +14,7 @@ Governing Validators can choose to run the Random Beacon Service in standalone m
 Before setting up the Random Beacon Service, we need to prepare:
 - Go version 1.19 or higher
 - Docker 
-- Registered the [VRF key](../manage/vrf-key.mdx)
+- Registered the [VRF key](/protocol/validators/manage/vrf-key.mdx)
 - A Ronin address to submit the random beacon. This can be any address (https://docs.roninchain.com/validators/setup/generate-keys#generate-an-ecdsa-key-using-the-cli ) but make sure to top up to this address some RON (you will need to send one transaction per day).
 
 ## Run Random Beacon Service in standalone mode
@@ -125,7 +125,7 @@ docker logs ronin-random-beacon-chain  -f –tail 100
 
 ## Run Random Beacon Service in combined mode
 
-1. Setup directory for postgres db data (assume that your node directory is as same as setting in [here](./mainnet/run-validator.mdx))
+1. Setup directory for postgres db data (assume that your node directory is as same as setting in [here](../setup.mdx))
 
 ```
 cd ~/ronin
