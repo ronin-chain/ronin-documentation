@@ -16,6 +16,8 @@ GoldRush provides multichain APIs and toolkits for easy web3 development across 
 | Free trial | ✅ |
 | Wallet API | ✅ |
 | NFT API | ✅ |
+| Token API | ✅ |
+| Price API | ✅ |
 | Blockchain API | ✅ |
 | Testnet | ❌ |
 
@@ -30,5 +32,7 @@ Moralis provides Web3 APIs and RPC nodes, giving you all the crypto data you nee
 | Free trial | ✅ |
 | Wallet API | ✅ |
 | NFT API | ✅ |
+| Token API | ✅ |
+| Price API | ✅ |
 | Blockchain API | ✅ |
 | Testnet | ✅ |
