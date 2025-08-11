@@ -16,7 +16,7 @@ Install Docker Engine and the Docker Compose plugin:
 
 {(() => {
 
-  const nodeTypes = ["Full node", "Archive node", "Validator node"];
+  const nodeTypes = ["RPC node (Full node)", "Archive node", "Validator node"];
   const networks = ["Mainnet", "Saigon Testnet"];
 
   const [nodeType, setNodeType] = useState(0);
@@ -133,7 +133,7 @@ services:
 `# The name of your node that you want displayed on https://ronin-stats.roninchain.com/
 INSTANCE_NAME=<INSTANCE_NAME>
 
-# The latest version of the node's image as listed in https://docs.roninchain.com/validators/setup/upgrade-validator
+# The latest version of the node's image as listed in https://docs.roninchain.com/developers/nodes/upgrade-node-version
 NODE_IMAGE=<NODE_IMAGE>
 
 # The password used to encrypt the node's private key file
@@ -145,11 +145,11 @@ GASPRICE=20000000000
 NETWORK_ID=${(network === 1 ? `2021`: `2020`)}
 VERBOSITY=3${(nodeType === 2 ? `
 
-# Your ECDSA private key without the 0x prefix, see https://docs.roninchain.com/validators/setup/generate-keys#generate-an-ecdsa-key
+# Your ECDSA private key without the 0x prefix, see https://docs.roninchain.com/developers/nodes/validators/generate-keys#generate-an-ecdsa-key
 VALIDATOR_PRIVATE_KEY=<ECDSA_PRIVATE_KEY>
 
 # BLS Wallet features
-# Your BLS private key without the 0x prefix, see https://docs.roninchain.com/validators/setup/generate-keys#generate-a-bls-key
+# Your BLS private key without the 0x prefix, see https://docs.roninchain.com/developers/nodes/validators/generate-keys#generate-a-bls-key
 BLS_PRIVATE_KEY=<BLS_PRIVATE_KEY>
 
 # The password used to encrypt the BLS private key file
@@ -173,6 +173,14 @@ CHAIN_STATS_WS_SERVER=ronin-stats-ws.roninchain.com
 RONIN_PARAMS=${roninParams[network][nodeType]}`
 }
       </CodeBlock>
+
+      <p>The latest <code>NODE_IMAGE</code> can be found <a href="/developers/nodes/upgrade-node-version">here</a>.</p>
+
+      {( nodeType === 2 ?
+      <p>To learn more about generating the private keys, please follow <a href="/developers/nodes/validators/generate-keys">this guide</a>.</p>
+      : null
+      )}
+
       {( !(network === 1 && nodeType === 1) ?
       <>
       <p>(Optional) Download the snapshot from the <a href="https://github.com/ronin-chain/ronin-snapshot">ronin-snapshot repo</a>:</p>
