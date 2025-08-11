@@ -114,9 +114,7 @@ services:
       - VERBOSITY=\${VERBOSITY}
       - MINE=\${MINE}
       - GASPRICE=\${GASPRICE}
-      - ETHSTATS_ENDPOINT=\${INSTANCE_NAME}:\${CHAIN_STATS_WS_SECRET}@\${CHAIN_STATS_WS_SERVER}:443${(network === 1 ? `
-      - GENESIS_PATH=\${GENESIS_PATH}
-      - CONFIG_PATH=\${CONFIG_PATH}` : ``)}${(nodeType === 2 ? `
+      - ETHSTATS_ENDPOINT=\${INSTANCE_NAME}:\${CHAIN_STATS_WS_SECRET}@\${CHAIN_STATS_WS_SERVER}:443${(nodeType === 2 ? `
       - PRIVATE_KEY=\${VALIDATOR_PRIVATE_KEY}
       - BLS_PASSWORD=\${BLS_PASSWORD}
       - BLS_PRIVATE_KEY=\${BLS_PRIVATE_KEY}
@@ -144,12 +142,7 @@ PASSWORD=<PASSWORD>
 MINE=${(nodeType === 2 ?`true` : `false`)}
 
 GASPRICE=20000000000
-${(network === 1 ? `NETWORK_ID=2021
-CONFIG_PATH=config.testnet.json
-GENESIS_PATH=testnet.json
-DEPLOYMENT=test`: `NETWORK_ID=2020
-CONFIG_PATH=config.mainnet.json`
-)}
+NETWORK_ID=${(network === 1 ? `2021`: `2020`)}
 VERBOSITY=3${(nodeType === 2 ? `
 
 # Your ECDSA private key without the 0x prefix, see https://docs.roninchain.com/validators/setup/generate-keys#generate-an-ecdsa-key
