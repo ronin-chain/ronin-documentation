@@ -330,6 +330,7 @@ const sidebars = {
           label: "Network",
           link: { type: "doc", id: "developers/network/index" },
           items: [
+            "developers/network/l2-faq",
             {
               type: "category",
               label: "EIP-1559",
