@@ -1,0 +1,247 @@
+---
+description: Set up and run an RPC node (non-validator node) on the Ronin mainnet using Docker.
+title: Setup
+---
+
+import React, { useState } from 'react';
+import CodeBlock from '@theme/CodeBlock';
+
+
+## Prerequisites
+
+Install Docker Engine and the Docker Compose plugin:
+
+* [Docker Engine](https://docs.docker.com/engine/)
+* [Docker Compose](https://docs.docker.com/compose/)
+
+{(() => {
+
+  const nodeTypes = ["RPC node (Full node)", "Archive node", "Validator node"];
+  const networks = ["Mainnet", "Saigon Testnet"];
+
+  const [nodeType, setNodeType] = useState(0);
+  const [network, setNetwork] = useState(0);
+
+  const roninParams = [
+    [ //mainnet full,archive,validator
+      '--http.api eth,net,web3,consortium --txpool.pricelimit 20000000000 --txpool.nolocals --cache 4096 --discovery.dns enrtree://AIGOFYDZH6BGVVALVJLRPHSOYJ434MPFVVQFXJDXHW5ZYORPTGKUI@nodes.roninchain.com',
+      '--gcmode archive --http.api eth,net,web3 --txpool.pricelimit 20000000000 --txpool.nolocals --cache 4096 --discovery.dns enrtree://AIGOFYDZH6BGVVALVJLRPHSOYJ434MPFVVQFXJDXHW5ZYORPTGKUI@nodes.roninchain.com',
+      '--http.api eth,net,web3,consortium --miner.gaslimit 30000000 --miner.gasreserve 10000000 --cache 4096 --discovery.dns enrtree://AIGOFYDZH6BGVVALVJLRPHSOYJ434MPFVVQFXJDXHW5ZYORPTGKUI@nodes.roninchain.com'
+    ],
+    [ //testnet full,archive,validator
+      '--http.api eth,net,web3 --txpool.pricelimit 20000000000 --txpool.nolocals --discovery.dns enrtree://AJCNIAXQIPO55NW3QE2NUBBDMPYZDOQUCAEUS65NHQFMUUFES5KOW@saigon.nodes.roninchain.com',
+      '--gcmode archive --http.api eth,net,web3 --txpool.pricelimit 20000000000 --txpool.nolocals --discovery.dns enrtree://AJCNIAXQIPO55NW3QE2NUBBDMPYZDOQUCAEUS65NHQFMUUFES5KOW@saigon.nodes.roninchain.com',
+      '--http.api eth,net,web3,consortium --miner.gaslimit 30000000 --miner.gasreserve 10000000 --discovery.dns enrtree://AJCNIAXQIPO55NW3QE2NUBBDMPYZDOQUCAEUS65NHQFMUUFES5KOW@saigon.nodes.roninchain.com'
+    ]
+  ];
+
+  const buttonStyle = {
+    margin: '5px',
+    cursor: 'pointer',
+    padding: '10px 15px',
+    border: 'none',
+    backgroundColor: '#007bff',
+    color: 'white',
+    borderRadius: '5px'
+  };
+
+  return (
+    <div>
+    <h2>Choose your node type</h2>
+      <p>
+        {
+          nodeTypes.map((label,idx) => 
+            <button 
+              key={`nodeType${idx}`} 
+              onClick={() => setNodeType(idx)} 
+              style={{...buttonStyle,...{opacity: nodeType === idx ? 1 : 0.4}}}>
+                {label}
+            </button>
+          )
+        }
+      </p>
+
+    <h2>Choose the network</h2>
+
+     <p>
+      {
+        networks.map((label,idx) => 
+          <button 
+            key={`network${idx}`} 
+            onClick={() => setNetwork(idx)} 
+            style={{...buttonStyle,...{opacity: network === idx ? 1 : 0.4}}}>
+              {label}
+          </button>
+        )
+      }
+    </p>
+
+    <h2>Configuration</h2>
+
+    <p>1. Set up the directories</p>
+    <CodeBlock language="bash">
+    {`mkdir -p ~/ronin/docker 
+cd ~/ronin`} 
+    </CodeBlock>
+
+    <p>Create a directory for chain data:</p>
+    <CodeBlock language="bash">{`mkdir -p chaindata/data/ronin`}</CodeBlock>
+
+    <p>2. In the <code>docker</code> directory, create a <code>docker-compose.yml</code> file with the following configuration:</p>
+    <CodeBlock showLineNumbers>
+{
+`version: "3"
+services:
+  node:
+    image: \${NODE_IMAGE}
+    stop_grace_period: 5m
+    stop_signal: SIGINT
+    hostname: node
+    container_name: node
+    ports:
+      - 127.0.0.1:8545:8545
+      - 127.0.0.1:8546:8546
+      - 30303:30303
+      - 30303:30303/udp
+      - 6060:6060
+    volumes:
+      - ~/ronin/chaindata:/ronin
+    environment:
+      - SYNC_MODE=full
+      - PASSWORD=\${PASSWORD}
+      - NETWORK_ID=\${NETWORK_ID}
+      - RONIN_PARAMS=\${RONIN_PARAMS}
+      - VERBOSITY=\${VERBOSITY}
+      - MINE=\${MINE}
+      - GASPRICE=\${GASPRICE}
+      - ETHSTATS_ENDPOINT=\${INSTANCE_NAME}:\${CHAIN_STATS_WS_SECRET}@\${CHAIN_STATS_WS_SERVER}:443${(nodeType === 2 ? `
+      - PRIVATE_KEY=\${VALIDATOR_PRIVATE_KEY}
+      - BLS_PASSWORD=\${BLS_PASSWORD}
+      - BLS_PRIVATE_KEY=\${BLS_PRIVATE_KEY}
+      - BLS_AUTO_GENERATE=\${BLS_AUTO_GENERATE}
+      - ENABLE_FAST_FINALITY=\${ENABLE_FAST_FINALITY}
+      - ENABLE_FAST_FINALITY_SIGN=\${ENABLE_FAST_FINALITY_SIGN}
+      - BLS_SHOW_PRIVATE_KEY=\${BLS_SHOW_PRIVATE_KEY}
+      - GENERATE_BLS_PROOF=\${GENERATE_BLS_PROOF}` : ``)}`
+} 
+    </CodeBlock>
+    <p>This compose file defines the <code>node</code> service that pulls a Ronin node image from the GitHub Container Registry.</p>
+    
+    <p>3. In the <code>docker</code> directory, create an <code>.env</code> file and add the following content, replacing the <code>&lt;...&gt;</code> placeholder values with your information: </p>
+    <CodeBlock showLineNumbers>
+{
+`# The name of your node that you want displayed on https://ronin-stats.roninchain.com/
+INSTANCE_NAME=<INSTANCE_NAME>
+
+# The latest version of the node's image as listed in https://docs.roninchain.com/developers/nodes/upgrade-node-version
+NODE_IMAGE=<NODE_IMAGE>
+
+# The password used to encrypt the node's private key file
+PASSWORD=<PASSWORD>
+
+MINE=${(nodeType === 2 ?`true` : `false`)}
+
+GASPRICE=20000000000
+NETWORK_ID=${(network === 1 ? `2021`: `2020`)}
+VERBOSITY=3${(nodeType === 2 ? `
+
+# Your ECDSA private key without the 0x prefix, see https://docs.roninchain.com/developers/nodes/validators/generate-keys#generate-an-ecdsa-key
+VALIDATOR_PRIVATE_KEY=<ECDSA_PRIVATE_KEY>
+
+# BLS Wallet features
+# Your BLS private key without the 0x prefix, see https://docs.roninchain.com/developers/nodes/validators/generate-keys#generate-a-bls-key
+BLS_PRIVATE_KEY=<BLS_PRIVATE_KEY>
+
+# The password used to encrypt the BLS private key file
+BLS_PASSWORD=<BLS_PASSWORD>
+
+# Whether to participate in the finality vote broadcast
+ENABLE_FAST_FINALITY=true
+
+# Whether to produce the finality vote
+ENABLE_FAST_FINALITY_SIGN=true
+
+# Whether to automatically generate BLS private key
+BLS_AUTO_GENERATE=false
+
+# Whether to show the raw BLS private key after decryption
+BLS_SHOW_PRIVATE_KEY=false` : ``)}
+
+CHAIN_STATS_WS_SECRET=${(network === 1 ?`xQj2MZPaN72` : `WSyDMrhRBe111`)}
+CHAIN_STATS_WS_SERVER=ronin-stats-ws.roninchain.com
+
+RONIN_PARAMS=${roninParams[network][nodeType]}`
+}
+      </CodeBlock>
+
+      <p>The latest <code>NODE_IMAGE</code> can be found <a href="/developers/nodes/upgrade-node-version">here</a>.</p>
+
+      {( nodeType === 2 ?
+      <p>To learn more about generating the private keys, please follow <a href="/developers/nodes/validators/generate-keys">this guide</a>.</p>
+      : null
+      )}
+
+      {( !(network === 1 && nodeType === 1) ?
+      <>
+      <p>(Optional) Download the snapshot from the <a href="https://github.com/ronin-chain/ronin-snapshot">ronin-snapshot repo</a>:</p>
+      <CodeBlock language="bash">
+      {`cd ~/ronin/chaindata/data/ronin/
+wget -q -O - <snapshot URL from the README file in the repo> | tar -I zstd -xvf -`} 
+      </CodeBlock>
+      </> : null
+      )}
+
+    <p>4. Start the node:</p>
+    <CodeBlock language="bash">
+      {`cd ~/ronin/docker && docker-compose up -d`} 
+    </CodeBlock>
+    <p>This command pulls a Ronin node image and starts the service you defined.</p>
+   
+   <p>6. Review the log.</p>
+    <CodeBlock language="bash">
+      {`docker logs node -f --tail 100`} 
+    </CodeBlock>
+    <p>
+      7. After a few minutes, check the status of your node on the <a href="https://ronin-stats.roninchain.com/">Ronin Analytics</a> page{(network === 1 ? <>, the <strong>Testnet</strong> section</> : ``)}. 
+      If it's green, the node is connected and up to date with the network.
+    </p>
+    </div>
+  );
+})()}
+
+## Enabling Path-Based State Storage (PBSS)
+
+To enable the experimental Path-Based State Storage mode, make these changes:
+
+1. Remove existing chaindata
+
+```bash
+rm -rf ~/ronin/chaindata/data/ronin/*`
+```
+
+Important: You must remove all existing chaindata before using PBSS mode as it's not compatible with the traditional storage format.
+
+2. Update the .env File
+Add `--state.scheme path` to your `RONIN_PARAMS`:
+
+```bash
+RONIN_PARAMS= [...] --state.scheme path
+```
+
+3. Update the docker-compose.yml File
+
+Add the `STATE_SCHEME` environment variable:
+
+```
+environment:
+  # Other environment variables...
+  - STATE_SCHEME=path
+```
+
+4. Start/Restart the node for applying the change:
+
+```bash
+cd ~/ronin/docker && docker-compose up -d
+```
+
+Note: PBSS mode is experimental and requires a full sync from genesis as snapshots are not yet supported for this mode.
