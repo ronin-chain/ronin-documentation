@@ -412,6 +412,18 @@ const sidebars = {
             "developers/tools/api-providers",
             {
               type: "category",
+              label: "Data Indexers",
+              link: {
+                type: "generated-index",
+                description: "Blockchain data indexers are specialized systems that efficiently collect, organize, and serve data from blockchains so it can be easily queried and used by decentralized applications (dApps), developers, and analysts. Blockchains are inherently hard to query directly because they store data in a sequential, low-level format that's optimized for integrity, not for speed or flexibility of access.",
+                slug: "/indexers",
+              },
+              items: [
+                "developers/tools/indexers/subquery",
+              ]
+            },
+            {
+              type: "category",
               label: "Oracles",
               link: {
                 type: "generated-index",
