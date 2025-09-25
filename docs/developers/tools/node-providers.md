@@ -26,7 +26,7 @@ Chainstack offers RPC & WS nodes with a free tier available and supports social 
 
 | | |
 | ----- | ----- |
-| Free trial | ✅ |
+| Free tier | ✅ |
 | Archive node | ✅ |
 | Websocket | ✅ |
 | Testnet | ✅ |
