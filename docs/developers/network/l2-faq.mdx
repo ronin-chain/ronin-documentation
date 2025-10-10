@@ -1,0 +1,43 @@
+---
+title: Layer-2 migration FAQ
+description: Frequently asked questions about Ronin's Layer-2 migration
+---
+
+### 🔹 What is happening?
+Ronin is migrating from a sidechain into an **Ethereum Layer-2 (L2)**. [Read the full announcement here.](https://blog.roninchain.com/p/ronins-homecoming-to-ethereum)
+This transition is planned for **Q1–Q2 2026** and will introduce a new rewards model called **Proof of Distribution**.
+
+### 🔹 What happens to my assets?
+All assets remain secure and functional through the migration. **No action required** for Ronin users. 
+
+### 🔹 Will users need ETH for gas?
+No. **$RON remains the only gas token.**  
+Ethereum settlement fees will be covered by the Ronin Treasury, not by users.
+
+### 🔹 What are the benefits of the migration?
+- **Security**: Ronin will inherit Ethereum's settlement and decentralization guarantees.  
+- **Speed**: Transactions are expected to be up to **12× faster**.  
+- **Proof of Distribution**: A new rewards model that channels staking rewards to active builders and contributors, based on a **Builder Score**, ensuring sustainable ecosystem growth.  
+
+### 🔹 How can I build to maximize my Builder Score?
+Builder Score rewards apps that create **real value** for the Ronin ecosystem. Key factors include:  
+
+- **On-chain activity**:  
+  - Design mechanics that drive transactions and gas usage without being easily botted.  
+  - Encourage healthy **NFT trading volume**, which contributes fees to the Ronin Treasury.  
+  - Sustain TVL and generate protocol revenue.  
+
+- **Off-chain activity**:  
+  - Grow an engaged community of real users.  
+  - Drive visibility, impressions, and cultural relevance beyond raw numbers.  
+
+In short: put meaningful activity on-chain, avoid exploitative and bot-friendly loops, and combine strong economic flow with genuine community traction.  
+
+### 🔹 Which Layer-2 protocol will be used?
+The exact L2 protocol has not yet been finalized.  
+- **Solution providers** have until **August 20** to propose their protocol.  
+- **Governing Validators** will then vote on the chosen solution by **August 27**.  
+- The voting timeline may be extended if further discussion is needed.
+
+### 🔹 Are there any considerations for developers?
+Yes. Faster block times may affect on-chain logic, especially apps relying on block intervals. We recommend to use `block.timestamp` instead of block numbers, since block numbers will advance more quickly after the migration.   
