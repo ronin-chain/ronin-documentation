@@ -73,7 +73,7 @@ const NETWORK = new ethers.Network("ronin", "2020");
 */
 
 const RPC_ENDPOINT = "https://saigon-testnet.roninchain.com/rpc";
-const NETWORK = new ethers.Network("saigon", "2021");
+const NETWORK = new ethers.Network("saigon", "202601");
 
 (async () => {
 

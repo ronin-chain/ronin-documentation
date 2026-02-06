@@ -171,7 +171,7 @@ If you have an API key, add it to the `X-API-KEY` HTTP header.
 
 #### Examples
 
-To fetch Ronin data, pass the `chainId` query parameter with the value `2020` for the Ronin mainnet or `2021` for the Saigon testnet.
+To fetch Ronin data, pass the `chainId` query parameter with the value `2020` for the Ronin mainnet or `202601` for the Saigon testnet.
 
 Get a list of incoming delegations:
 
