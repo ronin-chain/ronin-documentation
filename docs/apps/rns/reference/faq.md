@@ -18,7 +18,7 @@ Those colors refer to the domain tier, which indicates a domain's value. For mor
 
 ## 4. What happens if I don't renew my RNS domain? {#4}
 
-You can renew your domain's registration at any time during the existing registration and within 90 days after it expires, also known as the *grace period*. During the grace period, the domain name is reserved only for its previous owner to renew it, and it can't be set as primary.
+You can renew your domain's registration at any time during the existing registration and within 90 days after it expires, also known as the _grace period_. During the grace period, the domain name is reserved only for its previous owner to renew it, and it can't be set as primary.
 
 After the grace period, the domain name becomes available for anyone to register. The domain may still appear in your domain list, but you are no longer the owner. However, you can buy the domain back at any time.
 

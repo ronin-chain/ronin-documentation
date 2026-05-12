@@ -28,15 +28,15 @@ Every Ronin node release is published on
 
 To find the Docker image for each mainnet release, visit the following:
 
-* [GitHub Container Registry](https://github.com/ronin-chain/ronin/pkgs/container/ronin)
+- [GitHub Container Registry](https://github.com/ronin-chain/ronin/pkgs/container/ronin)
 
 To download the latest image for your node, follow these steps:
 
 1. In the `.env` file, set `NODE_IMAGE` to the following:
 
-    ```bash
-    ghcr.io/ronin-chain/ronin:v1.1.0-0c4fdfb
-    ```
+   ```bash
+   ghcr.io/ronin-chain/ronin:v1.1.0-0c4fdfb
+   ```
 
 2. Save the changes.
 3. Run `docker-compose up -d`.
@@ -44,15 +44,16 @@ To download the latest image for your node, follow these steps:
 ### Saigon testnet
 
 To find the Docker image for each testnet release, visit
-* [GitHub Container Registry](https://github.com/ronin-chain/ronin/pkgs/container/ronin)
+
+- [GitHub Container Registry](https://github.com/ronin-chain/ronin/pkgs/container/ronin)
 
 To download the latest image for your node, follow these steps:
 
 1. In the `.env` file, set `NODE_IMAGE` to the following:
 
-    ```bash
-    ghcr.io/ronin-chain/ronin:v1.1.0-0c4fdfb
-    ```
+   ```bash
+   ghcr.io/ronin-chain/ronin:v1.1.0-0c4fdfb
+   ```
 
 2. Save the changes.
 3. Run `docker-compose up -d`.

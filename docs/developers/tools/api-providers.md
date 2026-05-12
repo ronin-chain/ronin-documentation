@@ -11,15 +11,15 @@ API service providers simplify interaction with the Ronin network by offering AP
 
 GoldRush provides multichain APIs and toolkits for easy web3 development across 100+ chains.
 
-| | |
-| ----- | ----- |
-| Free trial | ✅ |
-| Wallet API | ✅ |
-| NFT API | ✅ |
-| Token API | ✅ |
-| Price API | ✅ |
-| Blockchain API | ✅ |
-| Testnet | ❌ |
+|                |     |
+| -------------- | --- |
+| Free trial     | ✅  |
+| Wallet API     | ✅  |
+| NFT API        | ✅  |
+| Token API      | ✅  |
+| Price API      | ✅  |
+| Blockchain API | ✅  |
+| Testnet        | ❌  |
 
 ## Moralis
 
@@ -27,12 +27,12 @@ GoldRush provides multichain APIs and toolkits for easy web3 development across 
 
 Moralis provides Web3 APIs and RPC nodes, giving you all the crypto data you need in one place. Get rich blockchain data, gain insights, delight your users, and build great dapps - fast.
 
-| | |
-| ----- | ----- |
-| Free trial | ✅ |
-| Wallet API | ✅ |
-| NFT API | ✅ |
-| Token API | ✅ |
-| Price API | ✅ |
-| Blockchain API | ✅ |
-| Testnet | ✅ |
+|                |     |
+| -------------- | --- |
+| Free trial     | ✅  |
+| Wallet API     | ✅  |
+| NFT API        | ✅  |
+| Token API      | ✅  |
+| Price API      | ✅  |
+| Blockchain API | ✅  |
+| Testnet        | ✅  |

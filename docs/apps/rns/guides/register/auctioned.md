@@ -14,19 +14,19 @@ If no bids are placed on an auctioned RNS name by the time the auction ends, the
 
 In RNS, auctioned domains are listed as follows:
 
-* **Awaiting auction**: domain name that's in the auctioned list but does not have a scheduled auction in the near future.
-* **Upcoming auction**: domain name that doesn't have a starting price yet but has an announced auction date.
-* **Auctioning**: domain names that's being auctioned and is open for biddings. If no one places a bid during the auction, the domain's status becomes **Awaiting auction** until another auction opens.
+- **Awaiting auction**: domain name that's in the auctioned list but does not have a scheduled auction in the near future.
+- **Upcoming auction**: domain name that doesn't have a starting price yet but has an announced auction date.
+- **Auctioning**: domain names that's being auctioned and is open for biddings. If no one places a bid during the auction, the domain's status becomes **Awaiting auction** until another auction opens.
 
 ### Renewal fee
 
 Following is the annual renewal fee for auctioned RNS names.
 
-| Name length | Renewal fee |
-|---|---|
-| 5+ characters | $5/year |
-| 4 characters | $100/year |
-| 3 characters | $300/year |
+| Name length   | Renewal fee |
+| ------------- | ----------- |
+| 5+ characters | $5/year     |
+| 4 characters  | $100/year   |
+| 3 characters  | $300/year   |
 
 ### Starting price
 
@@ -39,24 +39,24 @@ Before registering an auctioned domain, install [Ronin Wallet](https://wallet.ro
 ## Register an auctioned domain
 
 1. Open the [RNS app](https://id.roninchain.com) and connect your Ronin Wallet.
-![connect-wallet](../../assets/auctioned/connect-wallet.png)
+   ![connect-wallet](../../assets/auctioned/connect-wallet.png)
 1. Select the **Collections** page (1) and browse the available collections (2).
-![collections](../../assets/auctioned/collections.png)
+   ![collections](../../assets/auctioned/collections.png)
 1. Select the domain you like from any collection to open the domain info page.
-![collection-details](../../assets/auctioned/collection-details.png)
+   ![collection-details](../../assets/auctioned/collection-details.png)
    Alternatively, you can enter the domain name in the search field on the home page of the RNS app.
    ![search](../../assets/auctioned/search.png)
 1. The info page displays the [starting price](#starting-price) of the domain (1), the current highest bidder (2), and the history of bids (3).
-![domain-info](../../assets/auctioned/domain-info.png)
+   ![domain-info](../../assets/auctioned/domain-info.png)
 1. Click **Place a bid** to participate in the auction.
    :::info
    How much to bid is up to you, but there's a minimum markup of 10%. This means 10% of the starting price if you're the first bidder or 10% of the highest bid if you're not. For example, if the starting price is 5 RON, then your bid has to be least 5 RON + 10% of 5 RON = 5.5 RON.
    :::
    ![place-bid](../../assets/auctioned/place-bid.png)
 1. Enter your bid amount (1) and click **Place a bid** (2) to make payment.
-![confirm-bid](../../assets/auctioned/confirm-bid.png)
+   ![confirm-bid](../../assets/auctioned/confirm-bid.png)
 1. Your bid is now placed and locked until the auction ends. To keep track of your bid and the auction in general, download the Ronin Wallet app and enable notifications.
-![success](../../assets/auctioned/success.png)
+   ![success](../../assets/auctioned/success.png)
 
 If you win the auction, your bid is transferred to the RNS registrar, and you become the owner of the domain name without having to pay the renewal fee for the first year.
 

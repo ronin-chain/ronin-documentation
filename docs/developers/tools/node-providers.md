@@ -11,12 +11,12 @@ Node providers handle the complexities of running full or archive nodes, includi
 
 Ronin's core and preferred infrastructure provider. Conduit offers best-in-class RPC services and runs custom blockchain networks.
 
-| | |
-| ----- | ----- |
-| Free trial | ✅ |
-| Archive node | ✅ |
-| Websocket | ✅ |
-| Testnet | ✅ |
+|              |     |
+| ------------ | --- |
+| Free trial   | ✅  |
+| Archive node | ✅  |
+| Websocket    | ✅  |
+| Testnet      | ✅  |
 
 ## Alchemy
 
@@ -24,12 +24,12 @@ Ronin's core and preferred infrastructure provider. Conduit offers best-in-class
 
 Web3 developer platform that has powered top dApps for over half a decade. Access a full suite of RPC node APIs, Subgraphs.
 
-| | |
-| ----- | ----- |
-| Free trial | ✅ |
-| Archive node | ✅ |
-| Websocket | ✅ |
-| Testnet | ✅ |
+|              |     |
+| ------------ | --- |
+| Free trial   | ✅  |
+| Archive node | ✅  |
+| Websocket    | ✅  |
+| Testnet      | ✅  |
 
 ## Chainstack
 
@@ -37,13 +37,12 @@ Web3 developer platform that has powered top dApps for over half a decade. Acces
 
 Chainstack offers RPC & WS nodes with a free tier available and supports social logins like GitHub and crypto top-up for paid plans. Archive nodes available starting from the lowest paid plan.
 
-| | |
-| ----- | ----- |
-| Free tier | ✅ |
-| Archive node | ✅ |
-| Websocket | ✅ |
-| Testnet | ✅ |
-
+|              |     |
+| ------------ | --- |
+| Free tier    | ✅  |
+| Archive node | ✅  |
+| Websocket    | ✅  |
+| Testnet      | ✅  |
 
 ## dRPC
 
@@ -51,12 +50,12 @@ dRPC provides globally distributed RPC nodes, with high uptime maintained by pro
 
 [drpc.org](https://drpc.org/chainlist/ronin)
 
-| | |
-| ----- | ----- |
-| Free trial | ✅ |
-| Archive node | ✅ |
-| Websocket | ✅ |
-| Testnet | ✅ |
+|              |     |
+| ------------ | --- |
+| Free trial   | ✅  |
+| Archive node | ✅  |
+| Websocket    | ✅  |
+| Testnet      | ✅  |
 
 ## Moralis
 
@@ -64,12 +63,12 @@ dRPC provides globally distributed RPC nodes, with high uptime maintained by pro
 
 Enterprise grade RPC node API for Ronin and Saigon testnet. Supports full archive nodes and extended RPC methods.
 
-| | |
-| ----- | ----- |
-| Free trial | ✅ |
-| Archive node | ✅ |
-| Websocket | ❌ |
-| Testnet | ✅ |
+|              |     |
+| ------------ | --- |
+| Free trial   | ✅  |
+| Archive node | ✅  |
+| Websocket    | ❌  |
+| Testnet      | ✅  |
 
 ## Tatum
 
@@ -77,12 +76,12 @@ Enterprise grade RPC node API for Ronin and Saigon testnet. Supports full archiv
 
 Tatum provides fast, reliable access to Ronin RPCs starting with a free tier and scaling to a Business Plan with Websockets and 200+ RPS on demand. Tatum also provides exclusive incentives to Ronin builders.
 
-| | |
-| ----- | ----- |
-| Free trial | ✅ |
-| Archive node | ✅ |
-| Websocket | ✅ |
-| Testnet | ✅ |
+|              |     |
+| ------------ | --- |
+| Free trial   | ✅  |
+| Archive node | ✅  |
+| Websocket    | ✅  |
+| Testnet      | ✅  |
 
 ## Tenderly
 
@@ -90,9 +89,9 @@ Tatum provides fast, reliable access to Ronin RPCs starting with a free tier and
 
 Integrate a high-performance production Node RPC with built-in debugging tools and embedded development environments for any EVM chain.
 
-| | |
-| ----- | ----- |
-| Free trial | ✅ |
-| Archive node | ✅ |
-| Websocket | ✅ |
-| Testnet | ✅ |
+|              |     |
+| ------------ | --- |
+| Free trial   | ✅  |
+| Archive node | ✅  |
+| Websocket    | ✅  |
+| Testnet      | ✅  |

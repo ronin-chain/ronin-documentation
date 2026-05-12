@@ -8,7 +8,6 @@ title: CCIP Bridge
 
 The [Cross-Chain Interoperability Protocol (CCIP)](https://app.roninchain.com/ccip-bridge) is a protocol developed by Chainlink to enable secure and reliable communication and token transfers between different blockchain networks. It provides the technical infrastructure for cross-chain interactions, enabling developers to build decentralized applications (dApps) that operate across multiple blockchains.
 
-
 ## Features
 
 1. **Cross-Chain Connectivity**  
@@ -23,12 +22,11 @@ The [Cross-Chain Interoperability Protocol (CCIP)](https://app.roninchain.com/cc
 4. **Built-in Safeguards**  
    Includes security features such as rate limiting to mitigate risks associated with cross-chain interactions.
 
-
 ## User guides
 
-* [Transfer an ERC-20 token](./guides/transfer-token.md)
+- [Transfer an ERC-20 token](./guides/transfer-token.md)
 
-## Developer guides 
+## Developer guides
 
-* [Learn the token requirements to integrate with CCIP](/developers/tools/ccip)
-* Developers can access CCIP through [Chainlink's documentation and SDKs](https://docs.chain.link/ccip). The protocol provides tools and resources for integrating cross-chain functionality into dApps, with an emphasis on security and straightforward implementation.
+- [Learn the token requirements to integrate with CCIP](/developers/tools/ccip)
+- Developers can access CCIP through [Chainlink's documentation and SDKs](https://docs.chain.link/ccip). The protocol provides tools and resources for integrating cross-chain functionality into dApps, with an emphasis on security and straightforward implementation.

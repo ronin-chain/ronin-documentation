@@ -1,112 +1,130 @@
-import React from 'react'
+import React from "react";
 
-import { Card } from './Card'
-import CommunityIcon from './community.svg'
-import BoxTickIcon from './box-tick.svg'
-import CoinsIcon from './coins.svg'
-import FireIcon from './fire.svg'
-import WalletIcon from './wallet.svg'
-import RoninLogoIcon from './ronin-logo.svg'
-import ContractIcon from './deploy-contract.svg'
-import NodeIcon from './server.svg'
-import ToolsIcon from './tools.svg'
-import GiftIcon from './gift.svg'
-import BoltIcon from './bolt.svg'
-import DevelopersIcon from './developers.svg'
-import StorefrontIcon from './storefront.svg'
-import ShoppingcartIcon from './shoppingcart.svg'
-import CubeIcon from './cube.svg'
+import { Card } from "./Card";
+import CommunityIcon from "./community.svg";
+import BoxTickIcon from "./box-tick.svg";
+import CoinsIcon from "./coins.svg";
+import FireIcon from "./fire.svg";
+import WalletIcon from "./wallet.svg";
+import RoninLogoIcon from "./ronin-logo.svg";
+import ContractIcon from "./deploy-contract.svg";
+import NodeIcon from "./server.svg";
+import ToolsIcon from "./tools.svg";
+import GiftIcon from "./gift.svg";
+import BoltIcon from "./bolt.svg";
+import DevelopersIcon from "./developers.svg";
+import StorefrontIcon from "./storefront.svg";
+import ShoppingcartIcon from "./shoppingcart.svg";
+import CubeIcon from "./cube.svg";
 
 const podList = [
   {
-    title: 'Register your project',
+    title: "Register your project",
     Icon: CoinsIcon,
     link: {
-      href: '/proof-of-distribution',
-      title: 'Register your project',
+      href: "/proof-of-distribution",
+      title: "Register your project",
     },
     description: (
-      <>Ronin's Proof of Distribution system rewards builders based on their onchain contributions to our ecosystem. The more you contribute, the more you earn.</>
+      <>
+        Ronin's Proof of Distribution system rewards builders based on their
+        onchain contributions to our ecosystem. The more you contribute, the
+        more you earn.
+      </>
     ),
   },
-]
+];
 
 const getStartedList = [
   {
-    title: 'Acquire RON',
+    title: "Acquire RON",
     Icon: RoninLogoIcon,
     link: {
-      href: '/basics/acquire-ron',
-      title: 'Acquire RON',
+      href: "/basics/acquire-ron",
+      title: "Acquire RON",
     },
-    description: <>Install the Ronin wallet and get our native ecosystem token.</>,
+    description: (
+      <>Install the Ronin wallet and get our native ecosystem token.</>
+    ),
   },
   {
-    title: 'Join the community',
+    title: "Join the community",
     Icon: CommunityIcon,
     link: {
-      href: '/basics/community',
-      title: 'Join the community',
+      href: "/basics/community",
+      title: "Join the community",
     },
-    description: <>Stay informed on the latest Ronin news, events, and programs.</>,
+    description: (
+      <>Stay informed on the latest Ronin news, events, and programs.</>
+    ),
   },
-]
+];
 
 const startBuildingList = [
   {
-    title: 'Quickstart',
+    title: "Quickstart",
     Icon: BoltIcon,
     link: {
-      href: '/developers/quickstart',
-      title: 'Quickstart',
+      href: "/developers/quickstart",
+      title: "Quickstart",
     },
     description: (
       <>
-        Get started quickly using our guides, covering reading and writing data to the network, as
-        well as deploying smart contracts.
+        Get started quickly using our guides, covering reading and writing data
+        to the network, as well as deploying smart contracts.
       </>
     ),
   },
   {
-    title: 'Explore the Ronin Developer Console',
+    title: "Explore the Ronin Developer Console",
     Icon: DevelopersIcon,
     link: {
-      href: 'https://developers.roninchain.com/console',
-      title: 'Explore the Ronin Developer Console',
+      href: "https://developers.roninchain.com/console",
+      title: "Explore the Ronin Developer Console",
     },
     description: (
       <>
-        Deploy, sell & list NFTs with no-code tools. Access Sky Mavis suite of products for
-        distribution.
+        Deploy, sell & list NFTs with no-code tools. Access Sky Mavis suite of
+        products for distribution.
       </>
     ),
   },
   {
-    title: 'Set up a node',
+    title: "Set up a node",
     Icon: NodeIcon,
     link: {
-      href: '/developers/nodes',
-      title: 'Set up a node',
+      href: "/developers/nodes",
+      title: "Set up a node",
     },
-    description: <>Deploy your own RPC or archive node to query the blockchain without limitations.</>,
+    description: (
+      <>
+        Deploy your own RPC or archive node to query the blockchain without
+        limitations.
+      </>
+    ),
   },
   {
-    title: 'Deploy a smart contract',
+    title: "Deploy a smart contract",
     Icon: ContractIcon,
     link: {
-      href: '/developers/smart-contracts/deploy',
-      title: 'Deploy a smart contract',
+      href: "/developers/smart-contracts/deploy",
+      title: "Deploy a smart contract",
     },
     description: <>Learn more about deploying and verifying your contracts.</>,
   },
   {
-    title: 'Discover services & tools',
+    title: "Discover services & tools",
     Icon: ToolsIcon,
     link: {
-      href: '/developers/tools',
-      title: 'Discover tools',
+      href: "/developers/tools",
+      title: "Discover tools",
     },
-    description: <>Use Ronin ecosystem services and tools to quickly build a project prototype.</>,
+    description: (
+      <>
+        Use Ronin ecosystem services and tools to quickly build a project
+        prototype.
+      </>
+    ),
   },
   /*
   {
@@ -119,84 +137,100 @@ const startBuildingList = [
     },
   },
   */
-]
+];
 
 const uxList = [
   {
-    title: 'Add Ronin Waypoint',
+    title: "Add Ronin Waypoint",
     Icon: BoxTickIcon,
     link: {
-      href: 'https://roninchain.com/waypoint-developers',
-      title: 'Add Ronin Waypoint',
-    },
-    description: <>Onboard both Web2 and Web3 users to your project via Ronin Waypoint.</>,
-  },
-  {
-    title: 'Use gas sponsorship',
-    Icon: FireIcon,
-    link: {
-      href: 'https://docs.skymavis.com/mavis/ronin-waypoint/guides/sponsor-gas',
-      title: 'Use gas sponsorship',
-    },
-    description: <>Enable gas sponsorship for a frictionless onboarding experience.</>,
-  },
-  {
-    title: 'Integrate the Ronin Wallet',
-    Icon: WalletIcon,
-    link: {
-      href: 'https://docs.skymavis.com/ronin/wallet/overview',
-      title: 'Integrate the Ronin Wallet',
-    },
-    description: <>Learn how to integrate the Ronin wallet to your project.</>,
-  },
-]
-
-const monetizeList = [
-  {
-    title: 'List a collection on Ronin Market',
-    Icon: StorefrontIcon,
-    link: {
-      href: 'https://docs.skymavis.com/mavis/mavis-market/overview',
-      title: 'List a collection on Ronin Market',
+      href: "https://roninchain.com/waypoint-developers",
+      title: "Add Ronin Waypoint",
     },
     description: (
-      <>Sell your collection on our launchpad or list your NFTs for secondary trading.</>
+      <>Onboard both Web2 and Web3 users to your project via Ronin Waypoint.</>
     ),
   },
   {
-    title: 'Set up sales on Ronin Store',
-    Icon: ShoppingcartIcon,
+    title: "Use gas sponsorship",
+    Icon: FireIcon,
     link: {
-      href: 'https://docs.skymavis.com/mavis/mavis-store/overview',
-      title: 'Set up sales on Ronin Store',
+      href: "https://docs.skymavis.com/mavis/ronin-waypoint/guides/sponsor-gas",
+      title: "Use gas sponsorship",
     },
-    description: <>Sell in-game items to players, including both on-chain and off-chain items.</>,
+    description: (
+      <>Enable gas sponsorship for a frictionless onboarding experience.</>
+    ),
   },
-]
-
-const growList = [
   {
-    title: 'Register for Proof of Distribution',
-    Icon: CoinsIcon,
+    title: "Integrate the Ronin Wallet",
+    Icon: WalletIcon,
     link: {
-      href: '/proof-of-distribution',
-      title: 'Register for Proof of Distribution',
+      href: "https://docs.skymavis.com/ronin/wallet/overview",
+      title: "Integrate the Ronin Wallet",
+    },
+    description: <>Learn how to integrate the Ronin wallet to your project.</>,
+  },
+];
+
+const monetizeList = [
+  {
+    title: "List a collection on Ronin Market",
+    Icon: StorefrontIcon,
+    link: {
+      href: "https://docs.skymavis.com/mavis/mavis-market/overview",
+      title: "List a collection on Ronin Market",
     },
     description: (
       <>
-        Earn RON each epoch based on the on-chain activity of the contracts you register.
+        Sell your collection on our launchpad or list your NFTs for secondary
+        trading.
       </>
     ),
   },
   {
-    title: 'Apply for a grant',
-    Icon: GiftIcon,
+    title: "Set up sales on Ronin Store",
+    Icon: ShoppingcartIcon,
     link: {
-      href: 'https://roninchain.com/grants-program',
-      title: 'Apply for a grant',
+      href: "https://docs.skymavis.com/mavis/mavis-store/overview",
+      title: "Set up sales on Ronin Store",
     },
     description: (
-      <>Explore funding and get the resources you need to build your innovative project.</>
+      <>
+        Sell in-game items to players, including both on-chain and off-chain
+        items.
+      </>
+    ),
+  },
+];
+
+const growList = [
+  {
+    title: "Register for Proof of Distribution",
+    Icon: CoinsIcon,
+    link: {
+      href: "/proof-of-distribution",
+      title: "Register for Proof of Distribution",
+    },
+    description: (
+      <>
+        Earn RON each epoch based on the on-chain activity of the contracts you
+        register.
+      </>
+    ),
+  },
+  {
+    title: "Apply for a grant",
+    Icon: GiftIcon,
+    link: {
+      href: "https://roninchain.com/grants-program",
+      title: "Apply for a grant",
+    },
+    description: (
+      <>
+        Explore funding and get the resources you need to build your innovative
+        project.
+      </>
     ),
   },
   /*
@@ -210,7 +244,7 @@ const growList = [
     description: <>Launch your own digital nation on the largest Web3 network for gamers.</>,
   },
   */
-]
+];
 
 export const Features: React.FC = () => {
   return (
@@ -220,7 +254,11 @@ export const Features: React.FC = () => {
       </div>
       <div className="row">
         {podList.map((props, idx) => (
-          <Card key={idx} {...props} iconColor="var(--ifm-color-primary-dark)" />
+          <Card
+            key={idx}
+            {...props}
+            iconColor="var(--ifm-color-primary-dark)"
+          />
         ))}
       </div>
       <div className="row">
@@ -228,7 +266,11 @@ export const Features: React.FC = () => {
       </div>
       <div className="row">
         {getStartedList.map((props, idx) => (
-          <Card key={idx} {...props} iconColor="var(--ifm-color-primary-dark)" />
+          <Card
+            key={idx}
+            {...props}
+            iconColor="var(--ifm-color-primary-dark)"
+          />
         ))}
       </div>
       <div className="row">
@@ -236,7 +278,11 @@ export const Features: React.FC = () => {
       </div>
       <div className="row">
         {startBuildingList.map((props, idx) => (
-          <Card key={idx} {...props} iconColor="var(--ifm-color-primary-dark)" />
+          <Card
+            key={idx}
+            {...props}
+            iconColor="var(--ifm-color-primary-dark)"
+          />
         ))}
       </div>
       <div className="row">
@@ -244,7 +290,11 @@ export const Features: React.FC = () => {
       </div>
       <div className="row">
         {uxList.map((props, idx) => (
-          <Card key={idx} {...props} iconColor="var(--ifm-color-primary-dark)" />
+          <Card
+            key={idx}
+            {...props}
+            iconColor="var(--ifm-color-primary-dark)"
+          />
         ))}
       </div>
       <div className="row">
@@ -252,7 +302,11 @@ export const Features: React.FC = () => {
       </div>
       <div className="row">
         {monetizeList.map((props, idx) => (
-          <Card key={idx} {...props} iconColor="var(--ifm-color-primary-dark)" />
+          <Card
+            key={idx}
+            {...props}
+            iconColor="var(--ifm-color-primary-dark)"
+          />
         ))}
       </div>
       <div className="row">
@@ -260,9 +314,13 @@ export const Features: React.FC = () => {
       </div>
       <div className="row">
         {growList.map((props, idx) => (
-          <Card key={idx} {...props} iconColor="var(--ifm-color-primary-dark)" />
+          <Card
+            key={idx}
+            {...props}
+            iconColor="var(--ifm-color-primary-dark)"
+          />
         ))}
       </div>
     </section>
-  )
-}
+  );
+};

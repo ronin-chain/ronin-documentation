@@ -7,8 +7,8 @@ title: Community
 
 Stay informed on the latest Ronin news, events, and programs:
 
-* [Discord](https://discord.gg/roninnetwork)
-* [X](https://twitter.com/ronin_network)
+- [Discord](https://discord.gg/roninnetwork)
+- [X](https://twitter.com/ronin_network)
 
 ## Ronin blog
 

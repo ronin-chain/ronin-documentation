@@ -25,15 +25,14 @@ Go to the [Subgraph Studio](https://thegraph.com/studio/) and connect your walle
 
 ![Create a Subgraph](https://raw.githubusercontent.com/alinobrasil/the_graph_getting_started/refs/heads/main/img/studio-create-subgraph.png)
 
-
 You will then land on your subgraph’s page. All the CLI commands you need will be visible on the right side of the page:
 
 ![CLI commands](https://raw.githubusercontent.com/alinobrasil/the_graph_getting_started/refs/heads/ronin/img/studio-graphcli-commands.png)
 
-
 ### Install the Graph CLI⁠
 
 On your local machine run the following:
+
 ```
 npm install -g @graphprotocol/graph-cli
 ```
@@ -41,17 +40,18 @@ npm install -g @graphprotocol/graph-cli
 ### Initialize your Subgraph⁠
 
 You can copy this directly from your subgraph page to include your specific subgraph slug:
+
 ```
 graph init --studio <SUBGRAPH_SLUG>
 ```
+
 You’ll be prompted to provide some info on your subgraph like this:
 
 ![cli sample](https://raw.githubusercontent.com/alinobrasil/the_graph_getting_started/refs/heads/ronin/img/cli-sample.png)
 
-
 Simply have your contract verified on the block explorer and the CLI will automatically obtain the ABI and set up your subgraph. The default settings will generate an entity for each event.
 
-Note: If the cli fails to fetch ABI automatically, you can choose not to retry and follow [this guide](https://edgeandnode.notion.site/How-to-supply-ABI-manually-with-local-file-1888686fc7c2804b982fe6633157a55e?pvs=4) to supply that from a local file. 
+Note: If the cli fails to fetch ABI automatically, you can choose not to retry and follow [this guide](https://edgeandnode.notion.site/How-to-supply-ABI-manually-with-local-file-1888686fc7c2804b982fe6633157a55e?pvs=4) to supply that from a local file.
 
 ## 2. Deploy & Publish
 
@@ -79,19 +79,17 @@ You can test your subgraph by making a sample query in the playground section. T
 
 ![Playground](https://raw.githubusercontent.com/alinobrasil/the_graph_getting_started/refs/heads/ronin/img/studio-playground.png)
 
-
 ### Publish Your Subgraph to The Graph’s Decentralized Network
 
 Once your subgraph is ready to be put into production, you can publish it to the decentralized network. On your subgraph’s page in Subgraph Studio, click on the Publish button:
 
 ![publish button](https://raw.githubusercontent.com/alinobrasil/the_graph_getting_started/refs/heads/ronin/img/studio-publish-button.png)
 
-
 You'll need some ETH on Arbitrum One to create an on-chain transaction. The Graph's smart contracts are all on Arbitrum One, even if your subgraph is indexing data from another chain.
 
 ![Publish screen](https://raw.githubusercontent.com/alinobrasil/the_graph_getting_started/refs/heads/ronin/img/studio-publish-modal.png)
 
-> **Note:** When publishing, a "Partial Indexer Support" alert means subgraphs on this chain are indexed by The Graph's default indexer but not by independent indexers. An independent voting process is 
+> **Note:** When publishing, a "Partial Indexer Support" alert means subgraphs on this chain are indexed by The Graph's default indexer but not by independent indexers. An independent voting process is
 
 ## 3. Query your Subgraph
 
@@ -103,7 +101,6 @@ Here’s an example from the [CryptoPunks Ethereum subgraph](https://thegraph.co
 
 ![Query URL](https://raw.githubusercontent.com/alinobrasil/the_graph_getting_started/refs/heads/main/img/explorer-query-url.png)
 
-
 The query URL for this subgraph is:
 
 `https://gateway-arbitrum.network.thegraph.com/api/`**[api-key]**`/subgraphs/id/HdVdERFUe8h61vm2fDyycgxjsde5PbB832NHgJfZNqK`
@@ -113,7 +110,6 @@ Now, you simply need to  fill in your own API Key to start sending GraphQL quer
 ### Getting your own API Key
 
 ![API keys](https://raw.githubusercontent.com/alinobrasil/the_graph_getting_started/refs/heads/main/img/getting-api-key.png)
-
 
 In Subgraph Studio, you’ll see the “API Keys” menu at the top of the page. Here you can create API Keys.
 
@@ -130,7 +126,6 @@ This query shows the most expensive CryptoPunks sold.
     tokenId
   }
 }
-
 ```
 
 Passing this into the query URL returns this result:
@@ -158,7 +153,7 @@ Passing this into the query URL returns this result:
 ### Sample code
 
 ```jsx
-const axios = require('axios');
+const axios = require("axios");
 
 const graphqlQuery = `{
   trades(orderBy: priceETH, orderDirection: desc) {
@@ -166,10 +161,11 @@ const graphqlQuery = `{
     tokenId
   }
 }`;
-const queryUrl = 'https://gateway-arbitrum.network.thegraph.com/api/[api-key]/subgraphs/id/HdVdERFUe8h61vm2fDyycHgxjsde5PbB832NHgJfZNqK'
+const queryUrl =
+  "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/subgraphs/id/HdVdERFUe8h61vm2fDyycHgxjsde5PbB832NHgJfZNqK";
 
 const graphQLRequest = {
-  method: 'post',
+  method: "post",
   url: queryUrl,
   data: {
     query: graphqlQuery,
@@ -180,9 +176,8 @@ const graphQLRequest = {
 axios(graphQLRequest)
   .then((response) => {
     // Handle the response here
-    const data = response.data.data
-    console.log(data)
-
+    const data = response.data.data;
+    console.log(data);
   })
   .catch((error) => {
     // Handle any errors

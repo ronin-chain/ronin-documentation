@@ -13,12 +13,12 @@ on-chain. The other three are added by Sky Mavis after review.
 
 ## Methods at a glance
 
-| Method          | Who signs                                       | Self-register on-chain        | When to use                                                                                |
-| --------------- | ----------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------ |
-| Deployer        | The EOA that deployed the contract              | Yes                           | Default. Always try this first.                                                            |
+| Method          | Who signs                                       | Self-register on-chain        | When to use                                                                              |
+| --------------- | ----------------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------- |
+| Deployer        | The EOA that deployed the contract              | Yes                           | Default. Always try this first.                                                          |
 | Owner           | The Owner of an Ownable contract                | No, requires Sky Mavis review | Use when the deployer key is lost but the contract is Ownable and you control the Owner. |
-| Access-control  | An address holding any `AccessControl` role     | No, requires Sky Mavis review | Use when the contract uses OpenZeppelin AccessControl and you hold an admin role.          |
-| Safe (multisig) | A Gnosis Safe that is the owner or the deployer | No, requires Sky Mavis review | Use when ownership lives in a multisig. The Safe itself signs via on-chain ERC-1271.       |
+| Access-control  | An address holding any `AccessControl` role     | No, requires Sky Mavis review | Use when the contract uses OpenZeppelin AccessControl and you hold an admin role.        |
+| Safe (multisig) | A Gnosis Safe that is the owner or the deployer | No, requires Sky Mavis review | Use when ownership lives in a multisig. The Safe itself signs via on-chain ERC-1271.     |
 
 ## Where to verify
 
@@ -59,7 +59,7 @@ wallet, or anywhere you can't connect to a browser. The `cast`
 command-line tool ships as part of [Foundry](https://book.getfoundry.sh/).
 
 1. On the contract card, click `Verify manually`. Copy the `cast wallet
-   sign --data '...' --interactive` command shown in the dialog.
+sign --data '...' --interactive` command shown in the dialog.
 2. Run the command on a machine that can access the deployer key. Cast
    prints a `0x`-prefixed signature.
 3. Paste the signature into the dialog and click `Submit verification`.

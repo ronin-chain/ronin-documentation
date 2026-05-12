@@ -12,19 +12,19 @@ Ronin Bridge is a multi-signature bridge, which means that when you make a trans
 
 ## User guides
 
-* [Deposit an ERC-20 token](./guides/deposit-token.md)
-* [Withdraw an ERC-20 token](./guides/withdraw-token.md)
-* [Deposit an NFT](./guides/deposit-nft.md)
-* [Withdraw an NFT](./guides/withdraw-nft.md)
+- [Deposit an ERC-20 token](./guides/deposit-token.md)
+- [Withdraw an ERC-20 token](./guides/withdraw-token.md)
+- [Deposit an NFT](./guides/deposit-nft.md)
+- [Withdraw an NFT](./guides/withdraw-nft.md)
 
 ## Supported wallets
 
 Ronin Bridge supports the following wallets:
 
-* [Ronin Wallet](https://wallet.roninchain.com/)
-* [MetaMask](https://metamask.io/)
-* [Trust Wallet](https://trustwallet.com/)
-* [Coinbase Wallet](https://www.coinbase.com/wallet)
+- [Ronin Wallet](https://wallet.roninchain.com/)
+- [MetaMask](https://metamask.io/)
+- [Trust Wallet](https://trustwallet.com/)
+- [Coinbase Wallet](https://www.coinbase.com/wallet)
 
 ## Supported assets
 
@@ -32,8 +32,8 @@ Ronin Bridge supports the following wallets:
 
 With Ronin Bridge, you can bridge the following ERC-20 tokens:
 
-* Deposit (from Ethereum to Ronin): AEC, AGG, APRS, AXS, BANANA, ETH, PIXEL, SLP, USDC, YGG
-* Withdrawal (from Ronin to Ethereum): AGG, AXS, APRS, BANANA, PIXEL, SLP, USDC, WETH, YGG
+- Deposit (from Ethereum to Ronin): AEC, AGG, APRS, AXS, BANANA, ETH, PIXEL, SLP, USDC, YGG
+- Withdrawal (from Ronin to Ethereum): AGG, AXS, APRS, BANANA, PIXEL, SLP, USDC, WETH, YGG
 
 Withdrawal limits apply. For more information, see [Withdrawal limits](./reference/withdrawal-limits.md).
 
@@ -41,15 +41,15 @@ Withdrawal limits apply. For more information, see [Withdrawal limits](./referen
 
 With Ronin Bridge, you can bridge NFTs (non-fungible tokens) from the following collections:
 
-* Cyberkongz Genkai
-* Cyberkongz VX
-* Pixels Farm Land
+- Cyberkongz Genkai
+- Cyberkongz VX
+- Pixels Farm Land
 
 ## RNS-compatible
 
 When bringing a token or NFT to an address on the Ronin chain, you can enter either a standard crypto address that starts with `0x`, or an RNS (Ronin Name Service) domain name, such as `example.ron`.
 
-Make sure to type in the *full RNS name* including the `.ron` domain, so that the system can recognize the linked address.
+Make sure to type in the _full RNS name_ including the `.ron` domain, so that the system can recognize the linked address.
 
 ![bridge-rns](./assets/bridge-rns.png)
 

@@ -15,11 +15,11 @@ latest changes.
 
 Install the general dependencies:
 
-* Node.js v18.16 or higher:
+- Node.js v18.16 or higher:
   [https://nodejs.org/en/download](https://nodejs.org/en/download)
-* Yarn:
+- Yarn:
   [https://classic.yarnpkg.com/lang/en/docs/install/](https://classic.yarnpkg.com/lang/en/docs/install/)
-* Vale:
+- Vale:
   [https://vale.sh/docs/vale-cli/installation/](https://vale.sh/docs/vale-cli/installation/)
 
 ### Install the project

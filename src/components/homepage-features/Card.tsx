@@ -1,22 +1,28 @@
-import clsx from 'clsx'
-import React from 'react'
+import clsx from "clsx";
+import React from "react";
 
-import styles from './card.module.scss'
+import styles from "./card.module.scss";
 
 export type CardProps = {
-  iconColor: string
-  title: string
-  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
-  description?: string | React.ReactNode
+  iconColor: string;
+  title: string;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  description?: string | React.ReactNode;
   link: {
-    href: string
-    title: string
-  }
-}
+    href: string;
+    title: string;
+  };
+};
 
-export const Card: React.FC<CardProps> = ({ title, description, Icon, link, iconColor }) => {
+export const Card: React.FC<CardProps> = ({
+  title,
+  description,
+  Icon,
+  link,
+  iconColor,
+}) => {
   return (
-    <div className={clsx('col col--4', styles.wrapper)}>
+    <div className={clsx("col col--4", styles.wrapper)}>
       <a className={styles.container} href={link.href}>
         <div className={styles.content}>
           <div className={styles.icon}>
@@ -29,5 +35,5 @@ export const Card: React.FC<CardProps> = ({ title, description, Icon, link, icon
         </div>
       </a>
     </div>
-  )
-}
+  );
+};

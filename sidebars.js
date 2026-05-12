@@ -48,7 +48,8 @@ const sidebars = {
           label: "dApps",
           link: {
             type: "generated-index",
-            description: "User guides for selected dApps in the Ronin ecosystem.",
+            description:
+              "User guides for selected dApps in the Ronin ecosystem.",
             slug: "/apps",
           },
           items: [
@@ -69,7 +70,8 @@ const sidebars = {
                   label: "Liquidity pools",
                   link: {
                     type: "generated-index",
-                    description: "Guides for creating and managing liquidity pools.",
+                    description:
+                      "Guides for creating and managing liquidity pools.",
                     slug: "apps/katana/pools",
                   },
                   items: [
@@ -85,7 +87,8 @@ const sidebars = {
                   label: "Farms",
                   link: {
                     type: "generated-index",
-                    description: "Guides for creating farms and staking LP tokens.",
+                    description:
+                      "Guides for creating farms and staking LP tokens.",
                     slug: "apps/katana/farms",
                   },
                   items: [
@@ -156,7 +159,8 @@ const sidebars = {
                   label: "Register an RNS name",
                   link: {
                     type: "generated-index",
-                    description: "Guides to register different categories of RNS names.",
+                    description:
+                      "Guides to register different categories of RNS names.",
                     slug: "apps/rns/register",
                   },
                   items: [

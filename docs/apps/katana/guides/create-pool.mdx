@@ -42,11 +42,11 @@ Fee tiers in Katana V3 are different fee structures that accommodate different t
 
 When choosing a fee tier, consider the volatility of the tokens you're pooling. The higher the volatility, the higher the fee tier you should choose. Here are the available fee tiers:
 
-| Fee tier | Fee breakdown | Best for |
-| --- | --- | --- |
-| 0.01% Fees | 0.005% LP fee + 0.005% Ronin Treasury fee | Stablecoin pairs |
-| 0.3% Fees | 0.25% LP fee + 0.05% Ronin Treasury fee | Most trading pairs |
-| 1% Fees | 0.85% LP fee + 0.15% Ronin Treasury fee | High-volatility pairs |
+| Fee tier   | Fee breakdown                             | Best for              |
+| ---------- | ----------------------------------------- | --------------------- |
+| 0.01% Fees | 0.005% LP fee + 0.005% Ronin Treasury fee | Stablecoin pairs      |
+| 0.3% Fees  | 0.25% LP fee + 0.05% Ronin Treasury fee   | Most trading pairs    |
+| 1% Fees    | 0.85% LP fee + 0.15% Ronin Treasury fee   | High-volatility pairs |
 
 </details>
 
@@ -63,15 +63,15 @@ Concentrated liquidity is a feature that allows liquidity providers to allocate 
 
 Choosing the right price range for your liquidity pool is essential to maximize capital efficiency and returns. The price range determines where your liquidity will be concentrated, and the efficiency of your liquidity is measured by the capital efficiency factor, as shown in the following table:
 
-| Price range | Capital efficiency factor |
-| --- | --- |
-| [0; ∞] | x1 |
-| [0.1; 50] | x1.2682 |
-| [25; 2500] | x1.4625 |
-| [1000; 2000] | x6.2852 |
-| [30; 40] | x14.4102 |
-| [3; 3.5] | x26.4518 |
-| [0.999; 1.001] | x2000.4994 |
+| Price range    | Capital efficiency factor |
+| -------------- | ------------------------- |
+| [0; ∞]         | x1                        |
+| [0.1; 50]      | x1.2682                   |
+| [25; 2500]     | x1.4625                   |
+| [1000; 2000]   | x6.2852                   |
+| [30; 40]       | x14.4102                  |
+| [3; 3.5]       | x26.4518                  |
+| [0.999; 1.001] | x2000.4994                |
 
 **What is capital efficiency**
 
@@ -79,16 +79,16 @@ Capital efficiency refers to how well your liquidity is used within the specifie
 
 For example:
 
-* A price range of [0; ∞] provides a capital efficiency of x1, meaning it offers baseline efficiency but spreads liquidity thinly across all potential price points.
-* A more concentrated range like [0.999; 1.001] has a capital efficiency of x2000.4994, meaning your liquidity is highly concentrated in a narrow range, making it extremely efficient but more susceptible to price movement outside that range.
+- A price range of [0; ∞] provides a capital efficiency of x1, meaning it offers baseline efficiency but spreads liquidity thinly across all potential price points.
+- A more concentrated range like [0.999; 1.001] has a capital efficiency of x2000.4994, meaning your liquidity is highly concentrated in a narrow range, making it extremely efficient but more susceptible to price movement outside that range.
 
 **Choosing the right price range**
 
 When selecting a price range for your liquidity pool, consider the following factors:
 
-* Stablecoins or low-volatility assets: if you're providing liquidity for stablecoins or assets with historically low volatility, you might choose a very narrow range, such as [0.999; 1.001], to achieve maximum capital efficiency. This range maximizes efficiency because the price is unlikely to move significantly outside of this range.
-* Moderately volatile assets: for more volatile assets, like some ERC-20 tokens, you may want to widen the price range. For example, a range like [3; 3.5] or [25; 2500] offers greater flexibility while still improving capital efficiency compared to the default [0; ∞] range.
-* Highly volatile assets: For assets with high volatility, consider wider ranges such as [0.1; 50] or [30; 40]. These ranges offer balance between efficiency and the ability to capture price movements while reducing the risk of your liquidity becoming inactive (if prices move outside the range).
+- Stablecoins or low-volatility assets: if you're providing liquidity for stablecoins or assets with historically low volatility, you might choose a very narrow range, such as [0.999; 1.001], to achieve maximum capital efficiency. This range maximizes efficiency because the price is unlikely to move significantly outside of this range.
+- Moderately volatile assets: for more volatile assets, like some ERC-20 tokens, you may want to widen the price range. For example, a range like [3; 3.5] or [25; 2500] offers greater flexibility while still improving capital efficiency compared to the default [0; ∞] range.
+- Highly volatile assets: For assets with high volatility, consider wider ranges such as [0.1; 50] or [30; 40]. These ranges offer balance between efficiency and the ability to capture price movements while reducing the risk of your liquidity becoming inactive (if prices move outside the range).
 
 **Trade-off between capital efficiency and price range**
 
@@ -102,12 +102,12 @@ You should regularly monitor the market prices of the tokens in your pool. If th
 
 ## Prerequisites
 
-* To provide liquidity on Katana, you need to have tokens in your Ronin Wallet. You can acquire tokens by depositing from Ethereum using [Ronin Bridge](https://app.roninchain.com/bridge), buying tokens through the [Purchase](https://purchase.roninchain.com) website, or receiving tokens from other users.
-For more information, see [Acquire RON](../../../basics/acquire-ron.mdx).
-* Token creators: to create a liquidity pool with your token on Katana, you need to meet the following requirements:
-  * Have your ERC-20 token contract deployed to Ronin.
-  * Have your token reviewed by Sky Mavis.
-  * Have your Ronin address whitelisted by Sky Mavis. This address is linked to your token contract after the deployment is approved.
+- To provide liquidity on Katana, you need to have tokens in your Ronin Wallet. You can acquire tokens by depositing from Ethereum using [Ronin Bridge](https://app.roninchain.com/bridge), buying tokens through the [Purchase](https://purchase.roninchain.com) website, or receiving tokens from other users.
+  For more information, see [Acquire RON](../../../basics/acquire-ron.mdx).
+- Token creators: to create a liquidity pool with your token on Katana, you need to meet the following requirements:
+  - Have your ERC-20 token contract deployed to Ronin.
+  - Have your token reviewed by Sky Mavis.
+  - Have your Ronin address whitelisted by Sky Mavis. This address is linked to your token contract after the deployment is approved.
 
 ## Launch your ERC-20 token
 
@@ -137,10 +137,10 @@ For more information, refer to [Deploy a smart contract on Ronin](https://docs.s
 
 Submit the following information to your Sky Mavis partner engineer:
 
-* Deployer Ronin address for LP creation.
-* Publish timestamp for your token.
-* ERC-20 token contract address.
-* Deployer Ronin address for farm creation if different from the LP creation address.
+- Deployer Ronin address for LP creation.
+- Publish timestamp for your token.
+- ERC-20 token contract address.
+- Deployer Ronin address for farm creation if different from the LP creation address.
 
 Sky Mavis reviews your ERC-20 token contract to ensure it meets the requirements. If the contract is approved, Sky Mavis maps your LP creation Ronin address with the contract address. This makes the token visible to you on Katana, where you can create pools with it.
 
@@ -151,7 +151,7 @@ Sky Mavis reviews your ERC-20 token contract to ensure it meets the requirements
 1. Go to [Katana](https://app.roninchain.com/liquidity) and connect your Ronin Wallet.
 2. Select the **Liquidity pool** page, then click **Create new pool**.
 3. Select the version of Katana you want to use: **Position V3**.
-  ![Create a new V3 pool](../assets/katana-create-new-v3-pool.png)
+   ![Create a new V3 pool](../assets/katana-create-new-v3-pool.png)
 4. Select the tokens you want to pool, then choose the fee tier. For more information, see [Fee tiers](#fee-tiers).
 5. Enter the start price and set the price range for your liquidity pool by entering the minimum and maximum prices. For more information, see [Concentrated liquidity](#concentrated-liquidity).
 6. Enter the amount of tokens you want to contribute to the pool. You may need to approve both tokens in your Ronin Wallet if you interact with them for the first time.
@@ -165,23 +165,24 @@ Your pool is now created.
 
 1. Go to [Katana](https://app.roninchain.com/liquidity) and connect your Ronin Wallet.
 2. Select the **Liquidity pool** page, then click **Create new pool**.
-  ![Create a new pool](../assets/katana-create-new-pool.png)
+   ![Create a new pool](../assets/katana-create-new-pool.png)
 3. Select the version of Katana you want to use: **Position V2**.
 4. Select the tokens you want to pool, then enter the amount. You may need to approve both tokens in your Ronin Wallet if you interact with them for the first time. Token creators: select your token from the list. When selecting the token, you see its publish date at the bottom. This date signifies when the whitelisting period ends
-  ![Select a token pair](../assets/katana-select-token-pair.png)
-4. Click **Confirm** to finalize pool creation.
-  ![Confirm pool creation](../assets/katana-confirm-pool-creation.png)
-5. Review the details of your liquidity contribution:
-    * The amount of tokens you are contributing.
-    * The amount of LP tokens you receive in return.
-    * The exchange rate.
-    * The share of the pool you receive, which is 100% for a pool creator.
-    * Token creators: the publish date of the token, which signifies when the whitelisting period ends.
+   ![Select a token pair](../assets/katana-select-token-pair.png)
+5. Click **Confirm** to finalize pool creation.
+   ![Confirm pool creation](../assets/katana-confirm-pool-creation.png)
+6. Review the details of your liquidity contribution:
 
-    Click **Create pool & Supply**, then confirm the transaction in your Ronin Wallet.
-  ![Create pool and supply liquidity](../assets/katana-create-pool-supply.png)
+   - The amount of tokens you are contributing.
+   - The amount of LP tokens you receive in return.
+   - The exchange rate.
+   - The share of the pool you receive, which is 100% for a pool creator.
+   - Token creators: the publish date of the token, which signifies when the whitelisting period ends.
 
-Your pool is now created. 
+   Click **Create pool & Supply**, then confirm the transaction in your Ronin Wallet.
+   ![Create pool and supply liquidity](../assets/katana-create-pool-supply.png)
+
+Your pool is now created.
 
 Token creators: your pool is in a scheduled state, visible only to you.
 
@@ -214,6 +215,6 @@ To achieve better capital efficiency, you can consider migrating your liquidity 
 
 ## See also
 
-* [Add liquidity to a pool](add-liquidity.mdx)
-* [Create a farm](create-farm.mdx)
-* [Farm tokens](stake-tokens.mdx)
+- [Add liquidity to a pool](add-liquidity.mdx)
+- [Create a farm](create-farm.mdx)
+- [Farm tokens](stake-tokens.mdx)
