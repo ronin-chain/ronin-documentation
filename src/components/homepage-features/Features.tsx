@@ -2,10 +2,7 @@ import React from "react";
 
 import { Card } from "./Card";
 import CommunityIcon from "./community.svg";
-import BoxTickIcon from "./box-tick.svg";
 import CoinsIcon from "./coins.svg";
-import FireIcon from "./fire.svg";
-import WalletIcon from "./wallet.svg";
 import RoninLogoIcon from "./ronin-logo.svg";
 import ContractIcon from "./deploy-contract.svg";
 import NodeIcon from "./server.svg";
@@ -139,40 +136,6 @@ const startBuildingList = [
   */
 ];
 
-const uxList = [
-  {
-    title: "Add Ronin Waypoint",
-    Icon: BoxTickIcon,
-    link: {
-      href: "https://roninchain.com/waypoint-developers",
-      title: "Add Ronin Waypoint",
-    },
-    description: (
-      <>Onboard both Web2 and Web3 users to your project via Ronin Waypoint.</>
-    ),
-  },
-  {
-    title: "Use gas sponsorship",
-    Icon: FireIcon,
-    link: {
-      href: "https://docs.skymavis.com/mavis/ronin-waypoint/guides/sponsor-gas",
-      title: "Use gas sponsorship",
-    },
-    description: (
-      <>Enable gas sponsorship for a frictionless onboarding experience.</>
-    ),
-  },
-  {
-    title: "Integrate the Ronin Wallet",
-    Icon: WalletIcon,
-    link: {
-      href: "https://docs.skymavis.com/ronin/wallet/overview",
-      title: "Integrate the Ronin Wallet",
-    },
-    description: <>Learn how to integrate the Ronin wallet to your project.</>,
-  },
-];
-
 const monetizeList = [
   {
     title: "List a collection on Ronin Market",
@@ -278,18 +241,6 @@ export const Features: React.FC = () => {
       </div>
       <div className="row">
         {startBuildingList.map((props, idx) => (
-          <Card
-            key={idx}
-            {...props}
-            iconColor="var(--ifm-color-primary-dark)"
-          />
-        ))}
-      </div>
-      <div className="row">
-        <h2>Improve the user experience</h2>
-      </div>
-      <div className="row">
-        {uxList.map((props, idx) => (
           <Card
             key={idx}
             {...props}
