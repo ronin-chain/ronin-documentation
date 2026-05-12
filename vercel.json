@@ -25,74 +25,95 @@
     },
     {
       "source": "/basics/nodes",
-      "destination": "/developers/nodes",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/build-from-source",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/upgrade-node-version",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/requirements",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
 
     {
       "source": "/developers/nodes/mainnet",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/developers/nodes/testnet",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/developers/nodes/mainnet-archive",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/developers/nodes/testnet-archive",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
 
     {
       "source": "/protocol/validators/setup",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/mainnet",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/testnet",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/mainnet/run-validator",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/mainnet/run-combined",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/testnet/run-combined",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/cli",
-      "destination": "/developers/nodes/build-from-source",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/overview",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/upgrade-validator",
-      "destination": "/developers/nodes/upgrade-node-version",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
@@ -113,47 +134,47 @@
 
     {
       "source": "/protocol/validators/setup/generate-keys",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/random-beacon",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/clean-data",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/protocol/validators/setup/security",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/developers/nodes/validators",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/developers/nodes/validators/generate-keys",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/developers/nodes/validators/random-beacon",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/developers/nodes/validators/clean-data",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {
       "source": "/developers/nodes/validators/security",
-      "destination": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
 
@@ -174,7 +195,7 @@
     },
     {
       "source": "/protocol/nodes",
-      "destination": "/developers/nodes",
+      "destination": "/developers/nodes/",
       "statusCode": 301
     },
     {

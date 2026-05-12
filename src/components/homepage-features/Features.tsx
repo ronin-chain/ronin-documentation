@@ -98,8 +98,8 @@ const startBuildingList = [
     },
     description: (
       <>
-        Deploy your own RPC or archive node to query the blockchain without
-        limitations.
+        Run your own Ronin node, or query the network through a managed
+        provider.
       </>
     ),
   },

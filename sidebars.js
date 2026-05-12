@@ -259,20 +259,9 @@ const sidebars = {
         },
         "developers/gold-standard",
         {
-          type: "category",
-          label: "Node setup",
-          link: {
-            type: "generated-index",
-            description:
-              "A Ronin node is the building block of the Ronin network infrastructure. Nodes connect together to conduct consensus on transactions, maintain the ledger, and provide other useful functions.",
-            slug: "/developers/nodes",
-          },
-          items: [
-            "developers/nodes/requirements",
-            "developers/nodes/setup",
-            "developers/nodes/build-from-source",
-            "developers/nodes/upgrade-node-version",
-          ],
+          type: "doc",
+          label: "Run a node",
+          id: "developers/nodes/index",
         },
         {
           type: "category",

@@ -1,0 +1,26 @@
+---
+title: Run a node
+description: Run a Ronin node. Ronin is an Ethereum L2 on the OP Stack; node software is the standard op-node and reth combination.
+---
+
+Ronin is an Ethereum L2 built on the OP Stack. The node software is the standard `op-node` and `reth` combination used across the OP Stack ecosystem; there is no longer a separate Ronin node binary to build or run.
+
+:::info Operated by Conduit
+Ronin's L2 infrastructure is operated by [Conduit](https://conduit.xyz). The canonical setup for running a Ronin node is published in their repository.
+:::
+
+## Set up your node
+
+Follow the official Conduit guide:
+
+- [conduitxyz/ronin-migration-reth-docker](https://github.com/conduitxyz/ronin-migration-reth-docker) - Docker-based setup for Ronin mainnet and Saigon testnet using `op-node` and `reth`.
+
+The repository covers requirements, configuration, snapshots, and upgrades.
+
+## Use a managed provider
+
+If you do not want to self-host, see [Node providers](/developers/tools/node-providers) for SLA-backed RPC access.
+
+## Network details
+
+For chain IDs, public RPC endpoints, and block explorers, see [Network information](/developers/network).

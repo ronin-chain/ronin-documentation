@@ -66,62 +66,81 @@ const config = {
           },
           {
             from: "/basics/nodes",
-            to: "/developers/nodes",
+            to: "/developers/nodes/",
+          },
+          // Retired node-setup sub-pages. The standalone setup, build-from-source,
+          // requirements, and upgrade-node-version guides were replaced by a single
+          // landing page that points at Conduit's reth + op-node docker setup.
+          {
+            from: "/developers/nodes/setup",
+            to: "/developers/nodes/",
+          },
+          {
+            from: "/developers/nodes/build-from-source",
+            to: "/developers/nodes/",
+          },
+          {
+            from: "/developers/nodes/upgrade-node-version",
+            to: "/developers/nodes/",
+          },
+          {
+            from: "/developers/nodes/requirements",
+            to: "/developers/nodes/",
           },
           // Node-setup short URLs
           {
             from: "/developers/nodes/mainnet",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/developers/nodes/testnet",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/developers/nodes/mainnet-archive",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/developers/nodes/testnet-archive",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
-          // Validator node-setup short URLs (still useful: send to RPC node setup,
-          // since the ronin-node binary now only ships in non-validating mode here).
+          // Retired validator setup pages. Validators do not exist on the L2;
+          // readers are sent to the RPC node overview.
           {
             from: "/protocol/validators/setup",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/mainnet",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/testnet",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/mainnet/run-validator",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/mainnet/run-combined",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/testnet/run-combined",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/cli",
-            to: "/developers/nodes/build-from-source",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/overview",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/upgrade-validator",
-            to: "/developers/nodes/upgrade-node-version",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/parameters",
@@ -136,42 +155,42 @@ const config = {
             to: "/developers/network/",
           },
           // Validator key/security pages used to live under /developers/nodes/validators/.
-          // Those guides are retired with DPoS; surviving readers go to RPC node setup.
+          // Those guides are retired with DPoS; surviving readers go to the node overview.
           {
             from: "/protocol/validators/setup/generate-keys",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/random-beacon",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/clean-data",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/validators/setup/security",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/developers/nodes/validators",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/developers/nodes/validators/generate-keys",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/developers/nodes/validators/random-beacon",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/developers/nodes/validators/clean-data",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           {
             from: "/developers/nodes/validators/security",
-            to: "/developers/nodes/setup",
+            to: "/developers/nodes/",
           },
           // Retired DPoS protocol pages -> PoD overview.
           // Search engines and outbound links should land on the live program,
@@ -190,7 +209,7 @@ const config = {
           },
           {
             from: "/protocol/nodes",
-            to: "/developers/nodes",
+            to: "/developers/nodes/",
           },
           {
             from: "/protocol/rewards",
