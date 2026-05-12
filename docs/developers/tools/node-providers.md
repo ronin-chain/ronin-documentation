@@ -5,6 +5,19 @@ description: A collection of 3rd party RPC node providers
 
 Node providers handle the complexities of running full or archive nodes, including synchronization, storage, and uptime management, so developers and businesses can focus on building applications without the overhead of managing their own node infrastructure. Node providers offer secure and scalable access to the blockchain for querying data, broadcasting transactions or monitoring network events.
 
+## Conduit
+
+[conduit.xyz/](https://www.conduit.xyz/nodes)
+
+Ronin's core and preferred infrastructure provider. Conduit offers best-in-class RPC services and runs custom blockchain networks.
+
+| | |
+| ----- | ----- |
+| Free trial | ✅ |
+| Archive node | ✅ |
+| Websocket | ✅ |
+| Testnet | ✅ |
+
 ## Alchemy
 
 [alchemy.com/](https://www.alchemy.com/)
