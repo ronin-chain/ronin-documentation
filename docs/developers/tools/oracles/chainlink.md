@@ -6,7 +6,7 @@ description: Learn how to use Chainlink Price Feeds data.
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The [Chainlink](https://chain.link/) Price Feeds are on-chain reference contracts that are automatically updated by decentralized oracle networks (DONs) consisting of Chainlink nodes. Each reference contract stores the latest and the historical price of an asset in the form of an exchange rate (e.g. RON/USD), which smart contracts can then query on-demand. Each Chainlink Price Feed runs on a specific blockchain network and regularly updates with fresh data based on predefined parameters. 
+The [Chainlink](https://chain.link/) Price Feeds are on-chain reference contracts that are automatically updated by decentralized oracle networks (DONs) consisting of Chainlink nodes. Each reference contract stores the latest and the historical price of an asset in the form of an exchange rate (e.g. RON/USD), which smart contracts can then query on-demand. Each Chainlink Price Feed runs on a specific blockchain network and regularly updates with fresh data based on predefined parameters.
 
 ## Prerequisites
 
@@ -14,7 +14,6 @@ Before you begin, make sure you have:
 
 - A [Ronin RPC](/developers/network) endpoint
 - A feed contract address: This determines which data feed your smart contract will read. You can find the available contract addresses [here](https://docs.chain.link/data-feeds/price-feeds/addresses?network=ronin&page=1). For our examples we're using RON/USD `0x0B6074F21488B95945989E513EFEA070096d931D`.
-  
 
 ## Reading data feeds onchain
 
@@ -80,7 +79,7 @@ These code examples demonstrate how to read data feeds directly off chain using 
 <Tabs groupId="libraries">
   <TabItem value="ethers.js" label="ethers.js" default>
 
-  ```javascript
+```javascript
 import { ethers } from "ethers";
 
 // Replace with a valid Ronin RPC URL
@@ -135,21 +134,21 @@ const aggregatorV3InterfaceABI = [
     stateMutability: "view",
     type: "function",
   },
-]
-const addr = "0x0B6074F21488B95945989E513EFEA070096d931D"
-const priceFeed = new ethers.Contract(addr, aggregatorV3InterfaceABI, provider)
+];
+const addr = "0x0B6074F21488B95945989E513EFEA070096d931D";
+const priceFeed = new ethers.Contract(addr, aggregatorV3InterfaceABI, provider);
 priceFeed.latestRoundData().then((roundData) => {
   // Do something with roundData
-  console.log("Latest Round Data", roundData)
-})
-  ```
+  console.log("Latest Round Data", roundData);
+});
+```
 
   </TabItem>
   <TabItem value="web3.js" label="web3.js" default>
 
-  ```javascript
-const Web3 = require("web3")
-const web3 = new Web3("https://api.roninchain.com/rpc")
+```javascript
+const Web3 = require("web3");
+const web3 = new Web3("https://api.roninchain.com/rpc");
 const aggregatorV3InterfaceABI = [
   {
     inputs: [],
@@ -198,17 +197,17 @@ const aggregatorV3InterfaceABI = [
     stateMutability: "view",
     type: "function",
   },
-]
-const addr = "0x0B6074F21488B95945989E513EFEA070096d931D"
-const priceFeed = new web3.eth.Contract(aggregatorV3InterfaceABI, addr)
+];
+const addr = "0x0B6074F21488B95945989E513EFEA070096d931D";
+const priceFeed = new web3.eth.Contract(aggregatorV3InterfaceABI, addr);
 priceFeed.methods
   .latestRoundData()
   .call()
   .then((roundData) => {
     // Do something with roundData
-    console.log("Latest Round Data", roundData)
-  })
-  ```
+    console.log("Latest Round Data", roundData);
+  });
+```
 
   </TabItem>
 </Tabs>
@@ -216,6 +215,7 @@ priceFeed.methods
 ## Need Help?
 
 Check out the following links to get started with Chainlink Price Feeds.
+
 - [Getting Help](https://docs.chain.link/resources/getting-help?parent=dataFeeds)
 - [Chainlink Data Feeds document](https://docs.chain.link/data-feeds)
 - [Chainlink Website](https://chain.link/)

@@ -1,0 +1,381 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/apps/ccip-bridge/smart-contract-requirements",
+      "destination": "/developers/tools/ccip",
+      "statusCode": 301
+    },
+    { "source": "/get-started", "destination": "/", "statusCode": 301 },
+    {
+      "source": "/basics/white-paper",
+      "destination": "/basics/introduction",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/basics/rewards",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/basics/roles",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/basics/nodes",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/developers/nodes/setup",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/build-from-source",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/upgrade-node-version",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/requirements",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/developers/nodes/mainnet",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/testnet",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/mainnet-archive",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/testnet-archive",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/protocol/validators/setup",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/mainnet",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/testnet",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/mainnet/run-validator",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/mainnet/run-combined",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/testnet/run-combined",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/cli",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/overview",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/upgrade-validator",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/parameters",
+      "destination": "/developers/network/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/parameters/mainnet",
+      "destination": "/developers/network/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/parameters/testnet",
+      "destination": "/developers/network/",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/protocol/validators/setup/generate-keys",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/random-beacon",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/clean-data",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/setup/security",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/validators",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/validators/generate-keys",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/validators/random-beacon",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/validators/clean-data",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/nodes/validators/security",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/protocol",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/overview",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/roles",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/nodes",
+      "destination": "/developers/nodes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/rewards",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/protocol/validators",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/become-validator",
+      "destination": "/proof-of-distribution/register",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/slashing",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/faq",
+      "destination": "/proof-of-distribution/faq",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/governance",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/governance/overview",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/governance/proposals",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/view-activity",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/view-analytics",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/view-profile",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/claim-rewards",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/stake",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/finality",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/vrf-key",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/commission",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/addresses",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/maintenance",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/maintenance-exit",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/renounce",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/validators/manage/emergency-exit",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/protocol/delegators",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/delegators/become-delegator",
+      "destination": "/proof-of-distribution/register",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/delegators/stake",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/delegators/claim-rewards",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/delegators/validators",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/protocol/delegators/faq",
+      "destination": "/proof-of-distribution/faq",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/apps/ron-staking",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/developers/proof-of-distribution",
+      "destination": "/proof-of-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/proof-of-distribution/register",
+      "destination": "/proof-of-distribution/register",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/proof-of-distribution/verify",
+      "destination": "/proof-of-distribution/verify",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/proof-of-distribution/activate",
+      "destination": "/proof-of-distribution/activate",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/proof-of-distribution/manage",
+      "destination": "/proof-of-distribution/manage",
+      "statusCode": 301
+    },
+    {
+      "source": "/developers/proof-of-distribution/faq",
+      "destination": "/proof-of-distribution/faq",
+      "statusCode": 301
+    }
+  ]
+}

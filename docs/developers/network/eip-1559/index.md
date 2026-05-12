@@ -9,16 +9,17 @@ The Ronin mainnet hardfork is expected to go live on **March 17th** at block [43
 
 ## What's Changing?
 
-* Before the hardfork: The minimum gas price is 20 gwei.
-* After the hardfork: The minimum gas price will be 20 gwei + base fee.
-* The base fee starts at 1 gwei but can increase based on network congestion.
+- Before the hardfork: The minimum gas price is 20 gwei.
+- After the hardfork: The minimum gas price will be 20 gwei + base fee.
+- The base fee starts at 1 gwei but can increase based on network congestion.
 
 ## Why EIP-1559?
 
 EIP-1559 introduces a dynamic fee structure, offering several benefits:
-* Better fee estimation: The base fee adjusts automatically, reducing the risk of overpaying.
-* Network stability: Helps prevent gas price spikes during high traffic.
-* More efficient transactions: Encourages optimal gas usage and reduces unnecessary bidding wars.
+
+- Better fee estimation: The base fee adjusts automatically, reducing the risk of overpaying.
+- Network stability: Helps prevent gas price spikes during high traffic.
+- More efficient transactions: Encourages optimal gas usage and reduces unnecessary bidding wars.
 
 :::danger Action Required!
 If your application hardcodes gas prices at 20 gwei, update it to accommodate the new base fee mechanism.
@@ -46,7 +47,7 @@ Response
 {"jsonrpc":"2.0","id":1,"result":{"baseFeePerGas":["0x0","0x0"], ... }}
 ```
 
-####  After the hard fork (Saigon testnet example):
+#### After the hard fork (Saigon testnet example):
 
 ```
 curl -X POST https://saigon-testnet.roninchain.com/rpc \
@@ -89,7 +90,7 @@ const NETWORK = new ethers.Network("saigon", "202601");
     console.log("use legacy gas pricing");
   }
 
-})(); 
+})();
 ```
 
 ## See also

@@ -71,7 +71,7 @@ description: Write a brief intro to give readers a quick understanding of what's
 can read to reinforce the understanding of the information covered
 in this topic. -->
 
-* [Page title](Page URL)
+- [Page title](Page URL)
 ```
 
 For guidelines on writing explanation topics, see
@@ -105,7 +105,7 @@ https://developers.google.com/style/procedures. -->
 can read to reinforce the understanding of the information covered
 in this topic. -->
 
-* [Page title](Page URL)
+- [Page title](Page URL)
 ```
 
 For guidelines on writing task topics, see
@@ -134,7 +134,7 @@ https://github.com/axieinfinity/ronin-documentation/blob/main/docs/CONTRIBUTING.
 can read to reinforce the understanding of the information covered
 in this topic. -->
 
-* [Page title](Page URL)
+- [Page title](Page URL)
 ```
 
 For guidelines on writing reference topics, see
@@ -176,7 +176,7 @@ https://developers.google.com/style/procedures. -->
 can read to reinforce the understanding of the information covered
 in this topic. -->
 
-* [Page title](Page URL)
+- [Page title](Page URL)
 ```
 
 ### Troubleshooting reference
@@ -288,8 +288,7 @@ https://developers.google.com/style/procedures. -->
 can read to reinforce the understanding of the information covered in
 this tutorial. -->
 
-* [Page title](Page URL)
-
+- [Page title](Page URL)
 ```
 
 For guidelines on writing tutorials, see

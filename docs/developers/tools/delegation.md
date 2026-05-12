@@ -110,7 +110,6 @@ This example checks if a specific `to` address is set as a delegate for all toke
 ```javascript
 import { http } from "viem";
 import { DelegateV2 } from "@delegatexyz/sdk";
-
 (async () => {
   const RPC_URL = "https://api.roninchain.com/rpc";
   const v2 = new DelegateV2(http(RPC_URL));
@@ -132,7 +131,6 @@ import { custom } from "viem";
 import { ronin } from "viem/chains";
 import { DelegateV2 } from "@delegatexyz/sdk";
 import { WalletSDK } from "@roninnetwork/wallet-sdk";
-
 (async () => {
   const sdk = new WalletSDK();
   await sdk.connectInjected();

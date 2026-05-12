@@ -5,12 +5,11 @@ title: Bridge operator
 
 The role of the bridge operator is to acknowledge deposit and withdrawal events to facilitate asset transfers between Ronin and other EVM-based chains. Bridge operators have their own rewarding and slashing logic.
 
-
 ## Rewards for bridge operators
 
-* Ronin allocated 1,000,000 RON each year for bridge operator reward in the first two years.
-The rewards are automatically given to the bridge operators at the end of each period.
-* In each period, each bridge operator be given a reward that is proportional to the number of votes in the period. 
+- Ronin allocated 1,000,000 RON each year for bridge operator reward in the first two years.
+  The rewards are automatically given to the bridge operators at the end of each period.
+- In each period, each bridge operator be given a reward that is proportional to the number of votes in the period.
 
 ## Slashing rules
 
