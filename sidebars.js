@@ -37,11 +37,6 @@ const sidebars = {
           label: "Introduction to Ronin",
           id: "basics/introduction",
         },
-        {
-          type: "link",
-          label: "Whitepaper",
-          href: "/basics/white-paper",
-        },
         // Acquire RON
         "basics/acquire-ron",
         // Tokenomics
@@ -53,13 +48,10 @@ const sidebars = {
           label: "dApps",
           link: {
             type: "generated-index",
-            description:
-              "User guides for selected dApps in the Ronin ecosystem.",
+            description: "User guides for selected dApps in the Ronin ecosystem.",
             slug: "/apps",
           },
           items: [
-            // RON Staking
-            "apps/ron-staking",
             // Katana
             {
               type: "category",
@@ -77,8 +69,7 @@ const sidebars = {
                   label: "Liquidity pools",
                   link: {
                     type: "generated-index",
-                    description:
-                      "Guides for creating and managing liquidity pools.",
+                    description: "Guides for creating and managing liquidity pools.",
                     slug: "apps/katana/pools",
                   },
                   items: [
@@ -94,8 +85,7 @@ const sidebars = {
                   label: "Farms",
                   link: {
                     type: "generated-index",
-                    description:
-                      "Guides for creating farms and staking LP tokens.",
+                    description: "Guides for creating farms and staking LP tokens.",
                     slug: "apps/katana/farms",
                   },
                   items: [
@@ -166,8 +156,7 @@ const sidebars = {
                   label: "Register an RNS name",
                   link: {
                     type: "generated-index",
-                    description:
-                      "Guides to register different categories of RNS names.",
+                    description: "Guides to register different categories of RNS names.",
                     slug: "apps/rns/register",
                   },
                   items: [
@@ -213,109 +202,19 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Ronin Protocol",
+      label: "Proof of Distribution",
       collapsed: false,
       collapsible: false,
       link: {
-        type: "generated-index",
-        description: "Details about the Ronin consensus protocol.",
-        slug: "/protocol",
+        type: "doc",
+        id: "proof-of-distribution/index",
       },
       items: [
-        "protocol/overview",
-        "protocol/roles",
-        "protocol/nodes",
-        "protocol/rewards",
-        //Validators
-        {
-          type: "category",
-          label: "Validators",
-          link: {
-            type: "doc",
-            id: "protocol/validators/index",
-          },
-          items: [
-            "protocol/validators/setup",
-            "protocol/validators/become-validator",
-            {
-              type: "category",
-              label: "Manage validator account",
-              link: {
-                type: "generated-index",
-                title: "Manage your validator account",
-                description:
-                  "Guides for increasing or withdrawing your stake, claiming rewards, and managing your validator account.",
-                slug: "/protocol/validators/manage",
-              },
-              items: [
-                // View activity
-                "protocol/validators/manage/view-activity",
-                // View analytics
-                "protocol/validators/manage/view-analytics",
-                // View profile details
-                "protocol/validators/manage/view-profile",
-                // Claim rewards
-                "protocol/validators/manage/claim-rewards",
-                // Increase or move stake
-                "protocol/validators/manage/stake",
-                // Add or change finality vote key
-                "protocol/validators/manage/finality",
-                // Add or change VRF key
-                "protocol/validators/manage/vrf-key",
-                // Change commission rate
-                "protocol/validators/manage/commission",
-                // Change admin address
-                "protocol/validators/manage/addresses",
-                // Schedule maintenance
-                "protocol/validators/manage/maintenance",
-                // Early exit maintenance
-                "protocol/validators/manage/maintenance-exit",
-                // Renounce validator role
-                "protocol/validators/manage/renounce",
-                // Request emergency exit
-                "protocol/validators/manage/emergency-exit",
-              ],
-            },
-            // Slashing
-            "protocol/validators/slashing",
-            // Governance
-            {
-              type: "category",
-              label: "Governance",
-              link: {
-                type: "doc",
-                id: "protocol/validators/governance/overview",
-              },
-              items: [
-                // Create and vote on proposals
-                "protocol/validators/governance/proposals",
-              ],
-            },
-            // FAQ
-            "protocol/validators/faq",
-          ],
-        },
-        // Delegators
-        {
-          type: "category",
-          label: "Delegators",
-          link: {
-            type: "doc",
-            id: "protocol/delegators/index",
-          },
-          items: [
-            // Stake RON
-            "protocol/delegators/become-delegator",
-            // Manage your stake
-            "protocol/delegators/stake",
-            // Claim or restake your rewards
-            "protocol/delegators/claim-rewards",
-            // Track your validators
-            "protocol/delegators/validators",
-            // FAQ
-            "protocol/delegators/faq",
-          ],
-        },
+        "proof-of-distribution/register",
+        "proof-of-distribution/verify",
+        "proof-of-distribution/activate",
+        "proof-of-distribution/manage",
+        "proof-of-distribution/faq",
       ],
     },
     {
@@ -369,21 +268,6 @@ const sidebars = {
             "developers/nodes/setup",
             "developers/nodes/build-from-source",
             "developers/nodes/upgrade-node-version",
-            {
-              type: "category",
-              label: "Validators",
-              link: {
-                type: "generated-index",
-                title: "Validators",
-                slug: "/developers/nodes/validators",
-              },
-              items: [
-                "developers/nodes/validators/generate-keys",
-                "developers/nodes/validators/random-beacon",
-                "developers/nodes/validators/clean-data",
-                "developers/nodes/validators/security",
-              ],
-            },
           ],
         },
         {
@@ -422,8 +306,8 @@ const sidebars = {
               items: [
                 "developers/tools/oracles/pyth",
                 "developers/tools/oracles/chainlink",
-                "developers/tools/oracles/api3"
-              ]
+                "developers/tools/oracles/api3",
+              ],
             },
             "developers/tools/ccip",
             "developers/tools/the-graph",

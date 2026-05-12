@@ -12,7 +12,9 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "lint": "eslint . --ext .js,.tsx,.ts"
+    "lint": "eslint . --ext .js,.tsx,.ts",
+    "format": "prettier --write \"**/*.{md,mdx,js,ts,tsx,json}\"",
+    "format:check": "prettier --check \"**/*.{md,mdx,js,ts,tsx,json}\""
   },
   "dependencies": {
     "@algolia/client-search": "^4.17.0",

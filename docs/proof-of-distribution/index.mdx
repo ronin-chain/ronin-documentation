@@ -1,0 +1,68 @@
+---
+title: Proof of Distribution for builders
+description: Register your project to earn RON rewards based on the on-chain activity of your contracts.
+---
+
+import portalLanding from "./assets/portal-landing.png";
+
+Proof of Distribution (PoD) is Ronin's reward system for builders.
+It pays RON to projects that drive measurable on-chain activity, scored from
+the contracts you register. This guide shows you how to register your
+project, verify the contracts that count toward your score, and submit the
+activation transaction that puts your builder profile on-chain.
+
+<img
+  src={portalLanding}
+  width={1440}
+  alt="Builders Portal landing page at pod.roninchain.com"
+/>
+
+## Who should register
+
+Games, dApps, DeFi protocols, and other applications on Ronin.
+Builders register their projects, add their on-chain smart contracts,
+and earn RON each epoch based on their Builder Score. Everything
+happens on-chain through the builder registry contract.
+
+One wallet, one profile. If you operate multiple projects, register
+each from a different builder admin wallet.
+
+## What you'll do
+
+1. **[Register your project](./register).** Connect your admin wallet,
+   fill in project details, set a treasury wallet for payouts, and add the
+   contracts your project deploys.
+2. **[Verify contract ownership](./verify).** Sign for each contract from
+   the deployer, the owner, an authorized role, or a Safe. Deployer
+   verification is preferred and lets you self-register on-chain;
+   alternative methods require Sky Mavis review.
+3. **[Activate on-chain](./activate).** Submit one transaction that
+   puts your profile on-chain. Deployer-verified contracts register
+   immediately; the rest are queued for Sky Mavis to add.
+4. **[Manage your profile](./manage).** Add contracts, change your admin
+   or treasury wallet, and claim rewards.
+
+## What gets rewarded
+
+Your Builder Score is calculated each epoch from on-chain metrics across the
+contracts you have registered. Only contracts on your tracking list count.
+If you do not register a contract, its activity is invisible to PoD.
+
+For the broader economic context, see [Ronin tokenomics](../basics/tokenomics).
+
+## Before you start
+
+:::info Prerequisites
+
+- A wallet that does not already hold a builder profile and is not already a builder admin for another project.
+- At least one smart contract deployed on [Ronin](https://app.roninchain.com/).
+- Access to one of: the deployer EOA, the Owner of an Ownable contract, an authorized AccessControl role, or a Gnosis Safe that owns one of your contracts.
+- Enough RON in the builder admin wallet to cover gas for the activation transaction.
+
+:::
+
+## See also
+
+- [Verify a smart contract on Sourcify](../developers/smart-contracts/verify) (a
+  different kind of verification; both are recommended).
+- [Ronin tokenomics](../basics/tokenomics).

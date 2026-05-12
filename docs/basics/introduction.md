@@ -1,48 +1,32 @@
 ---
-label: Introduction
-description: What is Ronin?
+title: Introduction
+description: What is Ronin? An Ethereum L2 built for gamified experiences and real-world crypto adoption.
 ---
-# Introduction
 
 ## What is Ronin?
 
-Ronin is an EVM blockchain specifically forged for gaming. Launched by Sky Mavis, the creator of Web3’s breakout title Axie Infinity which has generated over &#36;1.3 B in revenue, Ronin is the only blockchain proven to scale a single game to accommodate millions of daily active users and has processed over &#36;4 B in NFT volumes. Ronin optimizes for near-instant transactions and negligible fees that enable millions of in-game transactions to occur seamlessly, making it the leading choice for Web3 games.
+Ronin is an Ethereum L2 built for gamified experiences and real-world crypto adoption. Launched by Sky Mavis, the creator of Axie Infinity, Ronin is the only blockchain proven to scale a single game to millions of daily active users and billions of dollars in transaction volume. It has processed over &#36;4 B USD in NFT volume and hosts 31M wallet downloads across the USA, Asia, Europe, and Latin America. Originally forged for gaming, Ronin is now evolving into Ethereum's gamification engine: a platform where play and finance merge to broaden financial access.
 
-### Ronin whitepaper
+## Why we built Ronin
 
-Download the latest version of our whitepaper here: <a href="/basics/white-paper" target="_blank">Ronin whitepaper</a>.
+When Axie was born, crypto was only for hobbyists and early adopters. Ronin changed that.
 
-## What makes Ronin unique as a blockchain?
+Axie was originally built on Ethereum Mainnet but due to the complex transactions involved in breeding and performing other activities in game, Axie players were spending huge amounts on gas fees. Gas fee spikes and network congestion would periodically slow the game's economy to a halt, freezing our momentum.
 
-### Ronin is battle-tested and scalable
+When Sky Mavis began developing Ronin in 2020, Ethereum's layer 2 options were still in their infancy. Rather than wait, we built our own solution. Ronin mainnet launched in February 2021, purpose-built to provide the high-throughput, near-zero-fee environment that a mass-market game demanded.
 
-In 2021, Ronin processed 15% of all NFT trading volume and is the home of all Axie Infinity assets—Axies, Land, SLP and AXS. Ronin is second only to Ethereum when it comes to [NFT sales by volume](http://cryptoslam.io/). While there are many other chains available, Ronin is the only platform proven to scale a single game to accommodate millions of daily users.
+In 2021, we deployed Axie on Ronin and reached exponential growth. Within months, users spiked from 19,000 to millions with over 75% of new users having never transacted onchain before.
 
-### Ronin is hyper optimized for gaming
+With Axie's success, we began receiving interest from builders to also come to Ronin. They knew it worked for mass-market crypto experiences and were interested in leveraging Ronin's tech and community to jumpstart their projects. Much like how Amazon began with books, or Apple with the personal computer, our targeted approach has set us up to start small and focused, and gradually increase the scope of what Ronin excels at over time. Ronin started very niche, serving just one game. Over time, we've added more applications, more games.
 
-Ronin cuts out the bloat found in other permissionless blockchains. We put in effort to curate high quality apps and ensure there is minimal spam and high uptime for games.
+The second major proof point came in late 2023, when Pixels, a browser-based social farming game, migrated to Ronin from Polygon. At the time of migration, Pixels had roughly 3,000 daily active users. Ronin's distribution, low fees, and existing wallet base changed that quickly. By June 2024, Pixels' monthly active users had peaked at 1.7 million, making it the second breakout success story on the network. Notably, of the 18 million visitors to the Pixels website in April 2024, 18% were from the Philippines, with Brazil, Thailand, and Indonesia each accounting for roughly 9% of traffic, reinforcing that Ronin's reach into emerging markets wasn't a fluke of Axie, but a characteristic of the platform.
 
-### Ronin is backed by Sky Mavis
+## Ronin, the L2
 
-Sky Mavis are the creators of the leading NFT project by adoption and all-time volume—Axie Infinity. Our experience building and scaling Axie Infinity has given us unique insights into product development, community building, and go-to-market which can be leveraged by partners deploying on the network. We offer advisory support and grants to help reduce risk and improve odds of success for games looking to launch.
+In 2026, Ronin returned to Ethereum, as an L2, retaining the scalability that necessitated the move in the first place while inheriting Ethereum's security.
 
-### Ronin is secure
+To sustain and accelerate that growth, we introduced the [Proof of Distribution](/proof-of-distribution) (PoD) system, a merit-based rewards mechanism that allocates RON emissions directly to the builders contributing most to the ecosystem. Rather than rewarding passive stakers, PoD tracks real on-chain activity: gas spend, new and active users, NFT volume, DEX volume, and contract interactions. The more a builder grows the network, the more they earn. It's a fundamental shift from inflation as subsidy to inflation as incentive, and it means the 5M RON emitted annually flows to the people actually building Ronin's future.
 
-Thanks to Ronin’s massive traction and being pioneers in the space, Sky Mavis has been one of the first companies to face scaling roadblocks and security threats ahead of the rest of the market. In March 2022, Sky Mavis experienced The Ronin Validator Breach, where 173,600 ETH and 25.5M USDC were drained from the Ronin Bridge. This breach was not due to a technical flaw, but a socially engineered attack by an elite group of hackers. This incident led Sky Mavis to become a fully antifragile, zero-trust organization. Sky Mavis has implemented rigorous internal security measures to prevent future attacks. All code has been fully reviewed and optimized, with security experts [auditing](./audits.md) the entire architecture.
+## Looking ahead
 
-## What is Ronin's consensus?
-
-### Proof of Authority (PoA)
-
-Ronin originally used Proof of Authority (PoA) consensus, where selected validators maintain the network and verify transactions. These validators are trusted entities, chosen by Sky Mavis and the community for their expertise and reputation. Validators are responsible for creating new blocks and adding them to the blockchain. Over time, validators could be added or removed if most current validators approved the decision. This incentivized validators to act honestly to avoid losing authority and reputation.
-
-A benefit of PoA is that it requires less energy than other consensus mechanisms, like Proof of Work (PoW), because it does not need complex calculations to verify transactions. It also enables faster transaction speeds and lower transaction fees since blocks can be validated quicker.
-
-The PoA consensus, however, is also criticized for being less decentralized than other consensus mechanisms. It relies on a group of trusted validators to maintain the network, requiring a high degree of trust in the validators. This can be a potential point of failure if they act maliciously.
-
-## DPoS
-
-To increase Ronin's decentralization, we launched an update integrating Delegated Proof of Stake (DPoS) into validator selection. Anyone holding enough RON can become a validator. It opens validator access and greatly improves Ronin's decentralization. Yet, we retain the benefits of PoA, like faster transaction speeds and lower transaction fees.
-
-DPoS is a consensus mechanism where token holders delegate their stake to select validators. These validators verify transactions, produce new blocks, and receive rewards for their work. Token holders can vote for themselves or delegate stake to a representative. The more tokens a validator receives, the higher their chance of selection. Rewards for producing blocks are shared between validators and delegators (who delegate stake to validators).
-
+Today, Ronin is home to a majority of the most successful crypto games on the market. With deep penetration in emerging markets across Southeast Asia, Latin America, and beyond, Ronin is also positioned to extend its gamification engine into adjacent territory: payments, real-world assets, and the broader challenge of making crypto accessible to the people that need it the most.

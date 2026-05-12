@@ -17,8 +17,21 @@ import StorefrontIcon from './storefront.svg'
 import ShoppingcartIcon from './shoppingcart.svg'
 import CubeIcon from './cube.svg'
 
-const getStartedList = [
+const podList = [
+  {
+    title: 'Register your project',
+    Icon: CoinsIcon,
+    link: {
+      href: '/proof-of-distribution',
+      title: 'Register your project',
+    },
+    description: (
+      <>Ronin's Proof of Distribution system rewards builders based on their onchain contributions to our ecosystem. The more you contribute, the more you earn.</>
+    ),
+  },
+]
 
+const getStartedList = [
   {
     title: 'Acquire RON',
     Icon: RoninLogoIcon,
@@ -29,15 +42,6 @@ const getStartedList = [
     description: <>Install the Ronin wallet and get our native ecosystem token.</>,
   },
   {
-    title: 'Stake RON',
-    Icon: CoinsIcon,
-    link: {
-      href: '/protocol/delegators/become-delegator',
-      title: 'Stake RON',
-    },
-    description: <>Stake your RON to help secure the network while earning rewards.</>,
-  },
-  {
     title: 'Join the community',
     Icon: CommunityIcon,
     link: {
@@ -46,16 +50,6 @@ const getStartedList = [
     },
     description: <>Stay informed on the latest Ronin news, events, and programs.</>,
   },
-  {
-    title: 'Become a validator',
-    Icon: CubeIcon,
-    link: {
-      href: '/protocol/validators/become-validator',
-      title: 'Become a validator',
-    },
-    description: <>Secure the network and deploy your own validator node.</>,
-  },
-
 ]
 
 const startBuildingList = [
@@ -66,7 +60,12 @@ const startBuildingList = [
       href: '/developers/quickstart',
       title: 'Quickstart',
     },
-    description: <>Get started quickly using our guides, covering reading and writing data to the network, as well as deploying smart contracts.</>,
+    description: (
+      <>
+        Get started quickly using our guides, covering reading and writing data to the network, as
+        well as deploying smart contracts.
+      </>
+    ),
   },
   {
     title: 'Explore the Ronin Developer Console',
@@ -75,7 +74,12 @@ const startBuildingList = [
       href: 'https://developers.roninchain.com/console',
       title: 'Explore the Ronin Developer Console',
     },
-    description: <>Deploy, sell & list NFTs with no-code tools. Access Sky Mavis suite of products for distribution.</>,
+    description: (
+      <>
+        Deploy, sell & list NFTs with no-code tools. Access Sky Mavis suite of products for
+        distribution.
+      </>
+    ),
   },
   {
     title: 'Set up a node',
@@ -84,7 +88,7 @@ const startBuildingList = [
       href: '/developers/nodes',
       title: 'Set up a node',
     },
-    description: <>Deploy a mainnet or testnet node to query the blockchain without limitations.</>,
+    description: <>Deploy your own RPC or archive node to query the blockchain without limitations.</>,
   },
   {
     title: 'Deploy a smart contract',
@@ -145,7 +149,7 @@ const uxList = [
     },
     description: <>Learn how to integrate the Ronin wallet to your project.</>,
   },
-];
+]
 
 const monetizeList = [
   {
@@ -155,7 +159,9 @@ const monetizeList = [
       href: 'https://docs.skymavis.com/mavis/mavis-market/overview',
       title: 'List a collection on Ronin Market',
     },
-    description: <>Sell your collection on our launchpad or list your NFTs for secondary trading.</>,
+    description: (
+      <>Sell your collection on our launchpad or list your NFTs for secondary trading.</>
+    ),
   },
   {
     title: 'Set up sales on Ronin Store',
@@ -166,9 +172,22 @@ const monetizeList = [
     },
     description: <>Sell in-game items to players, including both on-chain and off-chain items.</>,
   },
-];
+]
 
 const growList = [
+  {
+    title: 'Register for Proof of Distribution',
+    Icon: CoinsIcon,
+    link: {
+      href: '/proof-of-distribution',
+      title: 'Register for Proof of Distribution',
+    },
+    description: (
+      <>
+        Earn RON each epoch based on the on-chain activity of the contracts you register.
+      </>
+    ),
+  },
   {
     title: 'Apply for a grant',
     Icon: GiftIcon,
@@ -176,7 +195,9 @@ const growList = [
       href: 'https://roninchain.com/grants-program',
       title: 'Apply for a grant',
     },
-    description: <>Explore funding and get the resources you need to build your innovative project.</>,
+    description: (
+      <>Explore funding and get the resources you need to build your innovative project.</>
+    ),
   },
   /*
   {
@@ -189,11 +210,19 @@ const growList = [
     description: <>Launch your own digital nation on the largest Web3 network for gamers.</>,
   },
   */
-];
+]
 
 export const Features: React.FC = () => {
   return (
     <section className="container ftContainer">
+      <div className="row">
+        <h2>Proof of Distribution</h2>
+      </div>
+      <div className="row">
+        {podList.map((props, idx) => (
+          <Card key={idx} {...props} iconColor="var(--ifm-color-primary-dark)" />
+        ))}
+      </div>
       <div className="row">
         <h2>Get started</h2>
       </div>

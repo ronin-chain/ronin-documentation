@@ -1,0 +1,69 @@
+---
+title: Manage your builder profile
+description: Add contracts after activation, change admin or treasury wallets, and claim rewards.
+---
+
+After activation, the dashboard switches to a management view for
+adding contracts, changing wallets, and claiming rewards.
+
+## Add contracts after activation
+
+Same flow as during registration (`Add Contract` → paste → verify via
+any method; see [Verify contract ownership](./verify)). Once verified,
+the contract appears in `Ready to register`.
+
+## Push deployer-verified contracts on-chain
+
+If the new contract is deployer-verified, click `Add to registry` on
+its card in the `Ready to register` tab and sign the transaction in
+your wallet. The contract moves to `Registered` when the transaction
+confirms.
+
+## Contracts verified by other methods
+
+Contracts verified by owner, access-control, Safe, or Sky Mavis manual
+review are added to your tracking list by Sky Mavis. The card reads
+`Awaiting registration` until that happens.
+
+## Change your admin wallet
+
+In the Project panel, open the three-dots menu and click
+`Transfer admin…`. Paste the new admin wallet address and sign in your
+current admin wallet.
+
+:::warning Transferring admin is one-way and permanent
+
+Once the transaction confirms, the **previous admin wallet is
+permanently retired** for this builder profile **and can never be a
+builder admin under PoD again** (not for this profile, not for a new
+one). The new wallet immediately holds the admin role. If you set the
+new admin to an address you don't actually control, you've effectively
+burned your profile. Double-check the address before signing.
+
+:::
+
+## Change your treasury wallet
+
+In the Project panel, open the three-dots menu and click
+`Change treasury…`. Paste the new address and sign. Treasury changes
+are far less consequential than admin changes; you can change treasury
+again later if needed, and rewards already paid out are unaffected.
+
+## Edit project info
+
+Project name, description, logo, website, and X URL live off-chain.
+Click `Edit Project` to open the form, change what you need, and
+click `Save`. No transaction is required; the changes are immediate.
+
+## Claim rewards
+
+Accumulated rewards appear in the Builder Status panel. The panel shows
+your claimable balance, a `Claim` button, and a history of past claims
+with explorer links so you can reconcile against on-chain accounting.
+Click `Claim` to submit the claim transaction. Rewards are paid in RON
+to your treasury wallet, not the admin wallet.
+
+## See also
+
+- [Verify contract ownership](./verify)
+- [FAQ](./faq)

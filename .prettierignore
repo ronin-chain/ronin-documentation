@@ -1,0 +1,16 @@
+# Build output and caches
+build/
+.docusaurus/
+.cache-loader/
+
+# Vendored bundles
+static/katex/
+
+# Tooling-managed style files (Vale)
+.github/styles/
+
+# Lockfiles
+yarn.lock
+package-lock.json
+bun.lock
+bun.lockb
