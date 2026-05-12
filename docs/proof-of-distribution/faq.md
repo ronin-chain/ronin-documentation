@@ -32,7 +32,7 @@ but Sky Mavis adds those contracts manually.
 Yes. Use the manual signature flow: click `Verify manually` on the
 contract card, copy the `cast wallet sign` command, run it on a machine
 that can read the secret, paste the signature back, and submit. See
-[Verify contract ownership](./verify) for the full walkthrough.
+[Verify contract ownership](/proof-of-distribution/verify) for the full walkthrough.
 
 ### My deployer key is on a hardware wallet (Ledger / Trezor). What now?
 
@@ -46,7 +46,7 @@ The deployer recovered on-chain will be the factory contract, not your
 EOA. Deployer verification doesn't apply. Fall through to owner,
 access-control, or Safe verification depending on your contract's
 ownership pattern. If none of those work either, contact Sky Mavis in
-the Builders Discord channel (see [Verify contract ownership](./verify)).
+the Builders Discord channel (see [Verify contract ownership](/proof-of-distribution/verify)).
 
 ### What happens after I verify with owner, access-control, or Safe?
 
@@ -90,7 +90,7 @@ contracts are added by Sky Mavis.
 ### What happens if the activation transaction fails?
 
 The portal surfaces the revert reason. Common causes are listed under
-"Common errors" on the [Activate on-chain](./activate) page. The most
+"Common errors" on the [Activate on-chain](/proof-of-distribution/activate) page. The most
 common is a deployer proof failing a pre-flight check, usually because
 the on-chain deployer for a contract changed between verification and
 activation. Re-verify the affected contract and retry.
@@ -126,7 +126,7 @@ to submit the claim transaction.
 Yes. Change the admin and treasury wallets; the profile's on-chain
 identity carries over and project info is editable off-chain. Same
 retirement rule applies: the previous admin wallet can never be a PoD
-builder admin again (see [Manage your profile](./manage)).
+builder admin again (see [Manage your profile](/proof-of-distribution/manage)).
 
 ## Troubleshooting
 
