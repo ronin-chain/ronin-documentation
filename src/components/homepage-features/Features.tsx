@@ -7,7 +7,6 @@ import RoninLogoIcon from "./ronin-logo.svg";
 import ContractIcon from "./deploy-contract.svg";
 import NodeIcon from "./server.svg";
 import ToolsIcon from "./tools.svg";
-import GiftIcon from "./gift.svg";
 import BoltIcon from "./bolt.svg";
 import DevelopersIcon from "./developers.svg";
 import StorefrontIcon from "./storefront.svg";
@@ -179,20 +178,6 @@ const growList = [
       <>
         Earn RON each epoch based on the on-chain activity of the contracts you
         register.
-      </>
-    ),
-  },
-  {
-    title: "Apply for a grant",
-    Icon: GiftIcon,
-    link: {
-      href: "https://roninchain.com/grants-program",
-      title: "Apply for a grant",
-    },
-    description: (
-      <>
-        Explore funding and get the resources you need to build your innovative
-        project.
       </>
     ),
   },
