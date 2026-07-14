@@ -39,3 +39,4 @@ Start your indexer locally and query the generated GraphQL API. When you are rea
 - [Quickstart](https://docs.envio.dev/docs/HyperIndex/quickstart?utm_source=ronin&utm_medium=partner-docs)
 - [Supported networks](https://docs.envio.dev/docs/HyperIndex/supported-networks?utm_source=ronin&utm_medium=partner-docs)
 - [Envio documentation](https://docs.envio.dev/?utm_source=ronin&utm_medium=partner-docs)
+- [Performance benchmarks](https://docs.envio.dev/docs/HyperIndex/benchmarking?utm_source=ronin&utm_medium=partner-docs)
