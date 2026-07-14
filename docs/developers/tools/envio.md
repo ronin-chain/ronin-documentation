@@ -5,7 +5,7 @@ description: Index Ronin smart contract data into a GraphQL API with Envio Hyper
 
 ## Overview
 
-[Envio](https://envio.dev/?utm_source=ronin&utm_medium=partner-docs) is a high-performance indexing framework that turns smart contract events into a queryable GraphQL API. Envio's HyperIndex natively supports indexing any EVM chain out of the box, so you can index Ronin using your own RPC as the data source. Handlers can be written in TypeScript, JavaScript, or ReScript, with reorg handling, real-time and historical data, and multichain data aggregation. You can deploy and scale your indexer on the fully managed Envio Cloud, or self-host.
+[Envio](https://envio.dev/?utm_source=ronin&utm_medium=partner-docs) is the data layer for blockchain apps. It gives Ronin developers the fastest, most flexible way to get real-time and historical onchain data, from a single GraphQL API to raw high-speed access, with managed hosting on Envio Cloud. Envio's HyperIndex natively supports indexing any EVM chain out of the box, so you can index Ronin using your own RPC as the data source. Handlers can be written in TypeScript, JavaScript, or ReScript, with reorg handling, real-time and historical data, and multichain data aggregation. You can deploy and scale your indexer on the fully managed Envio Cloud, or self-host.
 
 ## Quick Start
 
