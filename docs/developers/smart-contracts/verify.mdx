@@ -7,7 +7,7 @@ import sourcifyImage from "./assets/sourcify.png";
 
 Verifying a smart contract is a crucial step to ensure the integrity and security of the Ronin network.
 The verification involves inspecting the contract's source code to ensure that it is bug-free, secure, and will perform as expected.
-We encourage the contract deployers to verify their contract by submitting the source code and metadata to our internal [Sourcify](https://sourcify.roninchain.com/) service.
+We encourage the contract deployers to verify their contract by submitting the source code and metadata to the official [Sourcify](https://sourcify.dev/) service.
 
 ## Verify using Hardhat
 
@@ -26,7 +26,7 @@ specify the endpoint and network before verifying by
 using the `hardhat sourcify` command:
 
 ```bash
-hardhat sourcify --endpoint https://sourcify.roninchain.com/server/ --network <ronin>
+hardhat sourcify --endpoint https://sourcify.dev/server/ --network <ronin>
 ```
 
 :::note
@@ -45,7 +45,12 @@ import { network } from "hardhat";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 
 const deploy = async (hre: HardhatRuntimeEnvironment) => {
-  if (network.name == "ronin" || network.name == "saigon") {
+  if (network.name == "ronin") {
+    await hre.run(TASK_SOURCIFY, {
+      endpoint: "https://sourcify.dev/server",
+    });
+  }
+  else if(network.name == "saigon") {
     await hre.run(TASK_SOURCIFY, {
       endpoint: "https://sourcify.roninchain.com/server",
     });
@@ -74,7 +79,7 @@ To verify your smart contract using Foundry, follow these steps:
 1. Run the following command:
 
 ```bash
-forge verify-contract --verifier sourcify --verifier-url https://sourcify.roninchain.com/server/ --chain-id <CHAIN> <ADDRESS> <CONTRACT>
+forge verify-contract --verifier sourcify --verifier-url https://sourcify.dev/server/ --chain-id <CHAIN> <ADDRESS> <CONTRACT>
 ```
 
 Replace the following placeholders with the actual values:
@@ -123,7 +128,7 @@ Metadata:
 ```
 
 1. Copy the JSON object starting at `{”compiler”:...` to a new file and save it as `metadata.json`.
-1. Upload your `metadata.json` file and the source code of your contract in the `.sol` format to [Sourcify](https://sourcify.roninchain.com/).
+1. Upload your `metadata.json` file and the source code of your contract in the `.sol` format to [Sourcify](https://sourcify.dev/).
 
 #### Hardhat contract metadata
 
@@ -131,11 +136,11 @@ If you use Hardhat for compiling your smart contract, then after running the
 `hardhat compile` command,
 you can find the metadata file in the `artifacts/build-info` directory.
 Hardhat includes the source code in the metadata file. You can upload just this
-`.json` file to [Sourcify](https://sourcify.roninchain.com/).
+`.json` file to [Sourcify](https://sourcify.dev/).
 
 ### Step 2. Submit information
 
-1. After you find the metadata and source code, upload them to [Sourcify](https://sourcify.roninchain.com/). If your files are valid, a contract's details form is displayed on the right side of the page.
+1. After you find the metadata and source code, upload them to [Sourcify](https://sourcify.dev/). If your files are valid, a contract's details form is displayed on the right side of the page.
 1. To complete the verification process, fill out the smart contract address and
    select the chain to which it is deployed.
 
@@ -151,8 +156,8 @@ To interact with the example contract on the Ronin app and view its source code,
 The following public API endpoints are available for verifying the source code of a smart contract.
 
 ```plaintext
-POST https://sourcify.roninchain.com/server/verify
-POST https://sourcify.roninchain.com/server/verify/create2
+POST https://sourcify.dev/server/verify
+POST https://sourcify.dev/server/verify/create2
 ```
 
 For more information on how to use these API endpoints, see [Verification API](https://docs.sourcify.dev/docs/api/#verification-api).
