@@ -95,3 +95,7 @@ Integrate a high-performance production Node RPC with built-in debugging tools a
 | Archive node | ✅  |
 | Websocket    | ✅  |
 | Testnet      | ✅  |
+
+## Independent RPC benchmark
+
+For an independent latency and reliability comparison of public Ronin RPC endpoints, see the [OpenChainBench Ronin RPC benchmark](https://openchainbench.com/benchmarks/ronin-rpc). It covers a set of community providers, with latency (p50/p90/p99), reliability, and block-height freshness probed every minute from three regions and published under CC BY 4.0 alongside the open-source harness.
