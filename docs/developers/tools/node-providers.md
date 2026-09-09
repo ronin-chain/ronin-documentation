@@ -98,7 +98,7 @@ Integrate a high-performance production Node RPC with built-in debugging tools a
 
 ## node101
 
-[node101 Ronin RPC](https://node101.io/en/rpc/ronin)
+[node101.io](https://node101.io/en/rpc/ronin)
 
 node101 provides paid Ronin JSON-RPC access and managed dedicated nodes with HTTP, WebSocket, and trace APIs. The service includes distributed request handling, the 101 Dashboard, real-time infrastructure monitoring, 24/7 technical support, and incident reports. Dedicated deployments can be scoped in Türkiye, Europe, and the United States. Archive nodes and Saigon testnet RPC are available on request.
 
