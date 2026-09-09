@@ -1,6 +1,6 @@
 ---
 title: Node providers
-description: A collection of 3rd party RPC node providers
+description: A collection of third-party RPC node providers
 ---
 
 Node providers handle the complexities of running full or archive nodes, including synchronization, storage, and uptime management, so developers and businesses can focus on building applications without the overhead of managing their own node infrastructure. Node providers offer secure and scalable access to the blockchain for querying data, broadcasting transactions or monitoring network events.
@@ -95,3 +95,16 @@ Integrate a high-performance production Node RPC with built-in debugging tools a
 | Archive node | ✅  |
 | Websocket    | ✅  |
 | Testnet      | ✅  |
+
+## node101
+
+[node101.io](https://node101.io/en/rpc/ronin)
+
+node101 provides paid Ronin JSON-RPC access and managed dedicated nodes with HTTP, WebSocket, and trace APIs. The service includes distributed request handling, the 101 Dashboard, real-time infrastructure monitoring, 24/7 technical support, and incident reports. Dedicated deployments can be scoped in Türkiye, Europe, and the United States. Archive nodes and Saigon testnet RPC are available on request.
+
+|              |                      |
+| ------------ | -------------------- |
+| Free trial   | ❌                   |
+| Archive node | Available on request |
+| Websocket    | ✅                   |
+| Testnet      | Available on request |
