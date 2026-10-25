@@ -57,6 +57,19 @@ dRPC provides globally distributed RPC nodes, with high uptime maintained by pro
 | Websocket    | ✅  |
 | Testnet      | ✅  |
 
+## eRPC
+
+[github.com/erpc/erpc](https://github.com/erpc/erpc)
+
+Open-source (Apache-2.0), self-hosted RPC proxy, not a hosted provider. You run it in front of several Ronin RPC providers to get failover across upstreams, retries and hedging, a reorg-aware response cache, and rate limiting. Docs: [docs.erpc.cloud](https://docs.erpc.cloud).
+
+|              |                       |
+| ------------ | --------------------- |
+| Free tier    | ✅ (self-hosted)      |
+| Archive node | Depends on upstreams  |
+| Websocket    | ✅ (opt-in)           |
+| Testnet      | ✅ (Saigon upstreams) |
+
 ## Moralis
 
 [developers.moralis.com](https://developers.moralis.com/chains/ronin/)
