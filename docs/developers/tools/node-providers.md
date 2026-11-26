@@ -76,6 +76,13 @@ Enterprise grade RPC node API for Ronin and Saigon testnet. Supports full archiv
 
 Tatum provides fast, reliable access to Ronin RPCs starting with a free tier and scaling to a Business Plan with Websockets and 200+ RPS on demand. Tatum also provides exclusive incentives to Ronin builders.
 
+Public endpoints that work without an API key, rate limited to 5 requests per minute for development and testing:
+
+- Ronin mainnet: `https://ronin-mainnet.gateway.tatum.io`
+- Saigon testnet: `https://ronin-saigon.gateway.tatum.io`
+
+Both are listed with their chain IDs on [freerpc.com](https://freerpc.com/ronin).
+
 |              |     |
 | ------------ | --- |
 | Free trial   | ✅  |
