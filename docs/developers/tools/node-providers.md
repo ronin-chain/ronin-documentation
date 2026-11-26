@@ -70,6 +70,13 @@ Enterprise grade RPC node API for Ronin and Saigon testnet. Supports full archiv
 | Websocket    | ❌  |
 | Testnet      | ✅  |
 
+## SolidRPC
+
+[SolidRPC’s Ronin documentation](https://solidrpc.io/docs/chains/ronin)
+
+SolidRPC provides authenticated HTTPS JSON-RPC for Ronin Mainnet and Saigon Testnet, including archive reads. WebSockets are not available on either network.
+
+
 ## Tatum
 
 [tatum.io](https://tatum.io/chain/ronin)
